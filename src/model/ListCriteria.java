@@ -12,7 +12,7 @@ public class ListCriteria {
     private final String kriteria3 = "harga";
 
     /**
-     * GETTER Bobot Kriteria 
+     * GETTER Bobot Kriteria
      * @param indexKriteria
      * @return
      */

@@ -5,24 +5,21 @@ import AHP.Utils.MatrixOperation;
 /**
  * Created by steve on 19/11/2015.
  */
-public class KriteriaGrafAdministrasi {
+public class KriteriaGrafTeknis {
     /**
-     * Daftar subkriteria pada kriteria administrasi :
-     * 1. Kelengkapan Data Administrasi
-     * 2. Status Perpajakan
-     * 3. Struktur Organisasi Perusahaan
-     * 4. Stabilitas Finansial
-     * 5. Reputasi Perusahaan
-     * 6. Pekerjaan Yang Sedang Dilaksanakan
-     * 7. Jaminan Bank
-     * 8. Sertifikat Keahlian dan Sertifikat Bidang Usaha.
+     * 1. Kemampuan Dasar
+     * 2. Data Peralatan/Perlengkapan.
+     * 3. Data Personil Teknik
+     * 4. Pengalaman Perusahaan.
+     * 5. Metodologi Pekerjaan.
+     * 6. Sertifikat Manajemen Mutu
      */
     private double[] eigenValueEachSubcriteria;
 
     /**
      * Daftar kontraktor diasumsikan sejumlah 6 badan yang dimasukkan
      * Baris : jumlah kontraktor (6)
-     * Kolom : jumlah subkriteria (8)
+     * Kolom : jumlah subkriteria (6)
      */
     private double[][] eigenValueEachContractorForThisSubcriteria;
 
@@ -48,14 +45,14 @@ public class KriteriaGrafAdministrasi {
     /**
      * Constructor Default
      */
-    public KriteriaGrafAdministrasi() {
-        eigenValueEachSubcriteria = new double[8];
-        eigenValueEachContractorForThisSubcriteria = new double[6][8];
+    public KriteriaGrafTeknis() {
+        eigenValueEachSubcriteria = new double[6];
+        eigenValueEachContractorForThisSubcriteria = new double[6][6];
     }
 
     /**
      * Insert Eigen Vector for One Subcriteria into eigenValueEachContractorForThisSubcriteria
-     * @param indexSubcriteria : 1-8 (lihat daftar kriteria di atas)
+     * @param indexSubcriteria : 1-6 (lihat daftar kriteria di atas)
      * @param eigenVectorThisSubcriteria : asumsi berjumlah 6 element (contractor)
      */
     public void insertSubcriteriaValueContractor(int indexSubcriteria, double[] eigenVectorThisSubcriteria) {
@@ -66,7 +63,7 @@ public class KriteriaGrafAdministrasi {
 
     /**
      * Insert final eigen value for each subcriteria
-     * @param indexSubcriteria : 1-8 (lihat daftar kriteria di atas)
+     * @param indexSubcriteria : 1-6 (lihat daftar kriteria di atas)
      * @param eigenValue : didapat dari eigen vector kriteria ini
      */
     public void insertSubcriteriaEigenValue(int indexSubcriteria, double eigenValue) {
@@ -79,6 +76,6 @@ public class KriteriaGrafAdministrasi {
      */
     public double[] computeEigenValueEachContractor() {
         return MatrixOperation.computeMatrixMultiplicationWithVector
-                (eigenValueEachContractorForThisSubcriteria,eigenValueEachSubcriteria,6,8);
+                (eigenValueEachContractorForThisSubcriteria, eigenValueEachSubcriteria, 6, 6);
     }
 }
