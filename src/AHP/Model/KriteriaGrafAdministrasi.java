@@ -1,5 +1,7 @@
 package AHP.Model;
 
+import AHP.Utils.MatrixOperation;
+
 /**
  * Created by steve on 19/11/2015.
  */
@@ -19,6 +21,8 @@ public class KriteriaGrafAdministrasi {
 
     /**
      * Daftar kontraktor diasumsikan sejumlah 6 badan yang dimasukkan
+     * Baris : jumlah kontraktor (6)
+     * Kolom : jumlah subkriteria (8)
      */
     private double[][] eigenValueEachContractorForThisSubcriteria;
 
@@ -50,5 +54,12 @@ public class KriteriaGrafAdministrasi {
         eigenValueEachSubcriteria[indexSubcriteria-1] = eigenValue;
     }
 
-    
+    /**
+     * Calculate vector contained weight for each contractor at this criteria
+     * @return
+     */
+    public double[] computeEigenValueEachContractor() {
+        return MatrixOperation.computeMatrixMultiplicationWithVector
+                (eigenValueEachContractorForThisSubcriteria,eigenValueEachSubcriteria,6,8);
+    }
 }

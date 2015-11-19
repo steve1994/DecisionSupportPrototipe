@@ -4,10 +4,19 @@ package model;
  * Created by steve on 19/11/2015.
  */
 public class Contractor {
+    private int index;
     private String namaBadanAtauPerorangan;
     private String alamatBadanAtauPerorangan;
     private String visiBadanAtauPerorangan;
     private String misiBadanAtauPerorangan;
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
 
     public String getNamaBadanAtauPerorangan() {
         return namaBadanAtauPerorangan;
