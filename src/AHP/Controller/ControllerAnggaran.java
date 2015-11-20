@@ -4,6 +4,7 @@ import AHP.Model.KriteriaGrafAdministrasi;
 import AHP.Model.KriteriaGrafAnggaran;
 import AHP.Model.KriteriaGrafTeknis;
 import AHP.Utils.MatrixOperation;
+import model.InputPairWiseComparison;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -54,7 +55,7 @@ public class ControllerAnggaran {
      * ke matriks berpasangan kriteria ANGGARAN
      * @param listPairwiseComparison
      */
-    public void setMatriksBerpasanganAnggaran(HashMap<Integer,HashMap<Integer,Integer>> listPairwiseComparison) {
+    public void setMatriksBerpasanganAnggaran(InputPairWiseComparison listPairwiseComparison) {
         // Isi nol semua elemen matriks
         for (int i=0;i<3;i++) {
             for (int j=0;j<3;j++) {
@@ -66,12 +67,12 @@ public class ControllerAnggaran {
             }
         }
         // Isi segitiga atas matriks
-        for (Map.Entry m : listPairwiseComparison.entrySet()) {
+        for (Map.Entry m : listPairwiseComparison.getListPairwiseComparison().entrySet()) {
             int indexBaris = (Integer) m.getKey();
             HashMap<Integer,Integer> relation = (HashMap<Integer,Integer>) m.getValue();
             for (Map.Entry n : relation.entrySet()) {
                 int indexKolom = (Integer) n.getKey();
-                int pairWiseValue = (Integer) n.getValue();
+                double pairWiseValue = (Double) n.getValue();
                 matriksBerpasanganAnggaran[indexBaris-1][indexKolom-1] = pairWiseValue;
             }
         }
@@ -91,7 +92,7 @@ public class ControllerAnggaran {
      * @param listPairwiseComparison
      * @param indexSubcriteria : 1-3 (lihat KriteriaGrafAnggaran)
      */
-    public void setMatriksBerpasanganSubcriteria(HashMap<Integer,HashMap<Integer,Integer>> listPairwiseComparison, int indexSubcriteria) {
+    public void setMatriksBerpasanganSubcriteria(InputPairWiseComparison listPairwiseComparison, int indexSubcriteria) {
         // Asumsi jumlah kontraktor 6
         double[][] pairwiseMatrixForSubcriteria = new double[6][6];
         // Isi nol semua elemen matriks
@@ -105,12 +106,12 @@ public class ControllerAnggaran {
             }
         }
         // Isi segitiga atas matriks
-        for (Map.Entry m : listPairwiseComparison.entrySet()) {
+        for (Map.Entry m : listPairwiseComparison.getListPairwiseComparison().entrySet()) {
             int indexBaris = (Integer) m.getKey();
             HashMap<Integer,Integer> relation = (HashMap<Integer,Integer>) m.getValue();
             for (Map.Entry n : relation.entrySet()) {
                 int indexKolom = (Integer) n.getKey();
-                int pairWiseValue = (Integer) n.getValue();
+                double pairWiseValue = (Double) n.getValue();
                 pairwiseMatrixForSubcriteria[indexBaris-1][indexKolom-1] = pairWiseValue;
             }
         }
