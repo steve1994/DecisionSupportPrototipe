@@ -5,6 +5,7 @@ import AHP.Model.KriteriaGrafAnggaran;
 import AHP.Model.KriteriaGrafTeknis;
 import AHP.Utils.MatrixOperation;
 import model.InputPairWiseComparison;
+import model.PairwiseComparisonElement;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -22,10 +23,11 @@ public class ControllerAnggaran {
     /**
      * Getter 1
      * @param indexSubcriteria
+     * @param indexContractor
      * @return
      */
-    public double[] getEigenVectorContractorThisSubcriteria(int indexSubcriteria) {
-        return contractorAnggaranEigenVector.get(indexSubcriteria-1);
+    public double getEigenVectorContractorThisSubcriteria(int indexSubcriteria, int indexContractor) {
+        return contractorAnggaranEigenVector.get(indexSubcriteria)[indexContractor];
     }
 
     /**
@@ -34,7 +36,7 @@ public class ControllerAnggaran {
      * @return
      */
     public double getEigenVectorSubcriteria(int indexSubcriteria) {
-        return subCriteriaAnggaranEigenVector[indexSubcriteria-1];
+        return subCriteriaAnggaranEigenVector[indexSubcriteria];
     }
     /**
      * Default Konstruktor
@@ -67,14 +69,11 @@ public class ControllerAnggaran {
             }
         }
         // Isi segitiga atas matriks
-        for (Map.Entry m : listPairwiseComparison.getListPairwiseComparison().entrySet()) {
-            int indexBaris = (Integer) m.getKey();
-            HashMap<Integer,Integer> relation = (HashMap<Integer,Integer>) m.getValue();
-            for (Map.Entry n : relation.entrySet()) {
-                int indexKolom = (Integer) n.getKey();
-                double pairWiseValue = (Double) n.getValue();
-                matriksBerpasanganAnggaran[indexBaris-1][indexKolom-1] = pairWiseValue;
-            }
+        for (PairwiseComparisonElement element : listPairwiseComparison.getListPairwiseComparison()) {
+            int indexBaris = element.getBaris();
+            int indexKolom = element.getKolom();
+            double pairWiseValue = element.getValueComparison();
+            matriksBerpasanganAnggaran[indexBaris][indexKolom] = pairWiseValue;
         }
         // Isi matriks sisa
         for (int i=0;i<3;i++) {
@@ -106,14 +105,11 @@ public class ControllerAnggaran {
             }
         }
         // Isi segitiga atas matriks
-        for (Map.Entry m : listPairwiseComparison.getListPairwiseComparison().entrySet()) {
-            int indexBaris = (Integer) m.getKey();
-            HashMap<Integer,Integer> relation = (HashMap<Integer,Integer>) m.getValue();
-            for (Map.Entry n : relation.entrySet()) {
-                int indexKolom = (Integer) n.getKey();
-                double pairWiseValue = (Double) n.getValue();
-                pairwiseMatrixForSubcriteria[indexBaris-1][indexKolom-1] = pairWiseValue;
-            }
+        for (PairwiseComparisonElement element : listPairwiseComparison.getListPairwiseComparison()) {
+            int indexBaris = element.getBaris();
+            int indexKolom = element.getKolom();
+            double pairWiseValue = element.getValueComparison();
+            pairwiseMatrixForSubcriteria[indexBaris][indexKolom] = pairWiseValue;
         }
         // Isi matriks sisa
         for (int i=0;i<6;i++) {
@@ -123,7 +119,7 @@ public class ControllerAnggaran {
                 }
             }
         }
-        matriksBerpasanganSubKriteriaAnggaran.add(indexSubcriteria - 1, pairwiseMatrixForSubcriteria);
+        matriksBerpasanganSubKriteriaAnggaran.add(indexSubcriteria, pairwiseMatrixForSubcriteria);
     }
 
     /**
@@ -156,7 +152,7 @@ public class ControllerAnggaran {
      * @param indexSubcriteria : 1-3 (lihat KriteriaGrafAnggaran)
      */
     public void computeFinalEigenVectorSubcriteria(int indexSubcriteria) {
-        double[][] matriksBerpasangan = matriksBerpasanganSubKriteriaAnggaran.get(indexSubcriteria-1);
+        double[][] matriksBerpasangan = matriksBerpasanganSubKriteriaAnggaran.get(indexSubcriteria);
         // Kuadratkan matriks berpasangan untuk kriteria administrasi
         double[][] squaredMatrixThisIteration = MatrixOperation.computeMatrixSquare(matriksBerpasangan,6,6);
         // Inisialisasi eigen vector awal
@@ -172,6 +168,6 @@ public class ControllerAnggaran {
             squaredMatrixThisIteration = MatrixOperation.computeMatrixSquare(squaredMatrixThisIteration,6,6);
             nextIterationEigenVector = MatrixOperation.computeEigenVector(squaredMatrixThisIteration,6,6);
         }
-        contractorAnggaranEigenVector.add(indexSubcriteria - 1, nextIterationEigenVector);
+        contractorAnggaranEigenVector.add(indexSubcriteria, nextIterationEigenVector);
     }
 }

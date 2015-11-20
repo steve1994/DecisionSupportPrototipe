@@ -3,8 +3,10 @@ package AHP.Utils;
 import AHP.Controller.ControllerAdministrasi;
 import AHP.Controller.ControllerAnggaran;
 import AHP.Controller.ControllerTeknis;
+import jdk.internal.util.xml.impl.Input;
 import model.InputPairWiseComparison;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 /**
@@ -150,78 +152,162 @@ public class MatrixOperation {
         Random random = new Random();
         // ADMINISTRASI
         InputPairWiseComparison inputCriteriaAdministrasi = new InputPairWiseComparison();
+        inputCriteriaAdministrasi.insertInputPairWiseComparison(0,1,random.nextInt(9)+1);
+        inputCriteriaAdministrasi.insertInputPairWiseComparison(0,2,random.nextInt(9)+1);
+        inputCriteriaAdministrasi.insertInputPairWiseComparison(0,3,random.nextInt(9)+1);
+        inputCriteriaAdministrasi.insertInputPairWiseComparison(0,4,random.nextInt(9)+1);
+        inputCriteriaAdministrasi.insertInputPairWiseComparison(0,5,random.nextInt(9)+1);
+        inputCriteriaAdministrasi.insertInputPairWiseComparison(0,6,random.nextInt(9)+1);
+        inputCriteriaAdministrasi.insertInputPairWiseComparison(0,7,random.nextInt(9)+1);
         inputCriteriaAdministrasi.insertInputPairWiseComparison(1,2,random.nextInt(9)+1);
         inputCriteriaAdministrasi.insertInputPairWiseComparison(1,3,random.nextInt(9)+1);
         inputCriteriaAdministrasi.insertInputPairWiseComparison(1,4,random.nextInt(9)+1);
         inputCriteriaAdministrasi.insertInputPairWiseComparison(1,5,random.nextInt(9)+1);
         inputCriteriaAdministrasi.insertInputPairWiseComparison(1,6,random.nextInt(9)+1);
         inputCriteriaAdministrasi.insertInputPairWiseComparison(1,7,random.nextInt(9)+1);
-        inputCriteriaAdministrasi.insertInputPairWiseComparison(1,8,random.nextInt(9)+1);
         inputCriteriaAdministrasi.insertInputPairWiseComparison(2,3,random.nextInt(9)+1);
         inputCriteriaAdministrasi.insertInputPairWiseComparison(2,4,random.nextInt(9)+1);
         inputCriteriaAdministrasi.insertInputPairWiseComparison(2,5,random.nextInt(9)+1);
         inputCriteriaAdministrasi.insertInputPairWiseComparison(2,6,random.nextInt(9)+1);
         inputCriteriaAdministrasi.insertInputPairWiseComparison(2,7,random.nextInt(9)+1);
-        inputCriteriaAdministrasi.insertInputPairWiseComparison(2,8,random.nextInt(9)+1);
         inputCriteriaAdministrasi.insertInputPairWiseComparison(3,4,random.nextInt(9)+1);
         inputCriteriaAdministrasi.insertInputPairWiseComparison(3,5,random.nextInt(9)+1);
         inputCriteriaAdministrasi.insertInputPairWiseComparison(3,6,random.nextInt(9)+1);
         inputCriteriaAdministrasi.insertInputPairWiseComparison(3,7,random.nextInt(9)+1);
-        inputCriteriaAdministrasi.insertInputPairWiseComparison(3,8,random.nextInt(9)+1);
         inputCriteriaAdministrasi.insertInputPairWiseComparison(4,5,random.nextInt(9)+1);
         inputCriteriaAdministrasi.insertInputPairWiseComparison(4,6,random.nextInt(9)+1);
         inputCriteriaAdministrasi.insertInputPairWiseComparison(4,7,random.nextInt(9)+1);
-        inputCriteriaAdministrasi.insertInputPairWiseComparison(4,8,random.nextInt(9)+1);
         inputCriteriaAdministrasi.insertInputPairWiseComparison(5,6,random.nextInt(9)+1);
         inputCriteriaAdministrasi.insertInputPairWiseComparison(5,7,random.nextInt(9)+1);
-        inputCriteriaAdministrasi.insertInputPairWiseComparison(5,8,random.nextInt(9)+1);
         inputCriteriaAdministrasi.insertInputPairWiseComparison(6,7,random.nextInt(9)+1);
-        inputCriteriaAdministrasi.insertInputPairWiseComparison(6,8,random.nextInt(9)+1);
-        inputCriteriaAdministrasi.insertInputPairWiseComparison(7,8,random.nextInt(9)+1);
+        // Subkriteria (Administrasi)
+        ArrayList<InputPairWiseComparison> listEachSubKriteriaAdministrasi = new ArrayList<InputPairWiseComparison>();
+        for (int i=0; i<8; i++) {
+            InputPairWiseComparison inputSubkriteriaAdministrasi = new InputPairWiseComparison();
+            inputSubkriteriaAdministrasi.insertInputPairWiseComparison(0,1,random.nextInt(9)+1);
+            inputSubkriteriaAdministrasi.insertInputPairWiseComparison(0,2,random.nextInt(9)+1);
+            inputSubkriteriaAdministrasi.insertInputPairWiseComparison(0,3,random.nextInt(9)+1);
+            inputSubkriteriaAdministrasi.insertInputPairWiseComparison(0,4,random.nextInt(9)+1);
+            inputSubkriteriaAdministrasi.insertInputPairWiseComparison(0,5,random.nextInt(9)+1);
+            inputSubkriteriaAdministrasi.insertInputPairWiseComparison(1,2,random.nextInt(9)+1);
+            inputSubkriteriaAdministrasi.insertInputPairWiseComparison(1,3,random.nextInt(9)+1);
+            inputSubkriteriaAdministrasi.insertInputPairWiseComparison(1,4,random.nextInt(9)+1);
+            inputSubkriteriaAdministrasi.insertInputPairWiseComparison(1,5,random.nextInt(9)+1);
+            inputSubkriteriaAdministrasi.insertInputPairWiseComparison(2,3,random.nextInt(9)+1);
+            inputSubkriteriaAdministrasi.insertInputPairWiseComparison(2,4,random.nextInt(9)+1);
+            inputSubkriteriaAdministrasi.insertInputPairWiseComparison(2,5,random.nextInt(9)+1);
+            inputSubkriteriaAdministrasi.insertInputPairWiseComparison(3,4,random.nextInt(9)+1);
+            inputSubkriteriaAdministrasi.insertInputPairWiseComparison(3,5,random.nextInt(9)+1);
+            inputSubkriteriaAdministrasi.insertInputPairWiseComparison(4,5,random.nextInt(9)+1);
+            listEachSubKriteriaAdministrasi.add(inputSubkriteriaAdministrasi);
+        }
         // TEKNIS
         InputPairWiseComparison inputCriteriaTeknis = new InputPairWiseComparison();
+        inputCriteriaTeknis.insertInputPairWiseComparison(0,1,random.nextInt(9)+1);
+        inputCriteriaTeknis.insertInputPairWiseComparison(0,2,random.nextInt(9)+1);
+        inputCriteriaTeknis.insertInputPairWiseComparison(0,3,random.nextInt(9)+1);
+        inputCriteriaTeknis.insertInputPairWiseComparison(0,4,random.nextInt(9)+1);
+        inputCriteriaTeknis.insertInputPairWiseComparison(0,5,random.nextInt(9)+1);
         inputCriteriaTeknis.insertInputPairWiseComparison(1,2,random.nextInt(9)+1);
         inputCriteriaTeknis.insertInputPairWiseComparison(1,3,random.nextInt(9)+1);
         inputCriteriaTeknis.insertInputPairWiseComparison(1,4,random.nextInt(9)+1);
         inputCriteriaTeknis.insertInputPairWiseComparison(1,5,random.nextInt(9)+1);
-        inputCriteriaTeknis.insertInputPairWiseComparison(1,6,random.nextInt(9)+1);
         inputCriteriaTeknis.insertInputPairWiseComparison(2,3,random.nextInt(9)+1);
         inputCriteriaTeknis.insertInputPairWiseComparison(2,4,random.nextInt(9)+1);
         inputCriteriaTeknis.insertInputPairWiseComparison(2,5,random.nextInt(9)+1);
-        inputCriteriaTeknis.insertInputPairWiseComparison(2,6,random.nextInt(9)+1);
         inputCriteriaTeknis.insertInputPairWiseComparison(3,4,random.nextInt(9)+1);
         inputCriteriaTeknis.insertInputPairWiseComparison(3,5,random.nextInt(9)+1);
-        inputCriteriaTeknis.insertInputPairWiseComparison(3,6,random.nextInt(9)+1);
         inputCriteriaTeknis.insertInputPairWiseComparison(4,5,random.nextInt(9)+1);
-        inputCriteriaTeknis.insertInputPairWiseComparison(4,6,random.nextInt(9)+1);
-        inputCriteriaTeknis.insertInputPairWiseComparison(5,6,random.nextInt(9)+1);
+        // Subkriteria (Teknis)
+        ArrayList<InputPairWiseComparison> listEachSubCriteriaTeknis = new ArrayList<InputPairWiseComparison>();
+        for (int i=0;i<6;i++) {
+            InputPairWiseComparison inputSubkriteriaTeknis = new InputPairWiseComparison();
+            inputSubkriteriaTeknis.insertInputPairWiseComparison(0,1,random.nextInt(9)+1);
+            inputSubkriteriaTeknis.insertInputPairWiseComparison(0,2,random.nextInt(9)+1);
+            inputSubkriteriaTeknis.insertInputPairWiseComparison(0,3,random.nextInt(9)+1);
+            inputSubkriteriaTeknis.insertInputPairWiseComparison(0,4,random.nextInt(9)+1);
+            inputSubkriteriaTeknis.insertInputPairWiseComparison(0,5,random.nextInt(9)+1);
+            inputSubkriteriaTeknis.insertInputPairWiseComparison(1,2,random.nextInt(9)+1);
+            inputSubkriteriaTeknis.insertInputPairWiseComparison(1,3,random.nextInt(9)+1);
+            inputSubkriteriaTeknis.insertInputPairWiseComparison(1,4,random.nextInt(9)+1);
+            inputSubkriteriaTeknis.insertInputPairWiseComparison(1,5,random.nextInt(9)+1);
+            inputSubkriteriaTeknis.insertInputPairWiseComparison(2,3,random.nextInt(9)+1);
+            inputSubkriteriaTeknis.insertInputPairWiseComparison(2,4,random.nextInt(9)+1);
+            inputSubkriteriaTeknis.insertInputPairWiseComparison(2,5,random.nextInt(9)+1);
+            inputSubkriteriaTeknis.insertInputPairWiseComparison(3,4,random.nextInt(9)+1);
+            inputSubkriteriaTeknis.insertInputPairWiseComparison(3,5,random.nextInt(9)+1);
+            inputSubkriteriaTeknis.insertInputPairWiseComparison(4,5,random.nextInt(9)+1);
+            listEachSubCriteriaTeknis.add(inputSubkriteriaTeknis);
+        }
         // ANGGARAN
         InputPairWiseComparison inputCriteriaAnggaran = new InputPairWiseComparison();
+        inputCriteriaAnggaran.insertInputPairWiseComparison(0,1,random.nextInt(9)+1);
+        inputCriteriaAnggaran.insertInputPairWiseComparison(0,2,random.nextInt(9)+1);
         inputCriteriaAnggaran.insertInputPairWiseComparison(1,2,random.nextInt(9)+1);
-        inputCriteriaAnggaran.insertInputPairWiseComparison(1,3,random.nextInt(9)+1);
-        inputCriteriaAnggaran.insertInputPairWiseComparison(2,3,random.nextInt(9)+1);
+        // Subkriteria(Anggaran)
+        ArrayList<InputPairWiseComparison> listEachSubCriteriaAnggaran = new ArrayList<InputPairWiseComparison>();
+        for (int i=0;i<3;i++) {
+            InputPairWiseComparison inputSubkriteriaAnggaran = new InputPairWiseComparison();
+            inputSubkriteriaAnggaran.insertInputPairWiseComparison(0,1,random.nextInt(9)+1);
+            inputSubkriteriaAnggaran.insertInputPairWiseComparison(0,2,random.nextInt(9)+1);
+            inputSubkriteriaAnggaran.insertInputPairWiseComparison(0,3,random.nextInt(9)+1);
+            inputSubkriteriaAnggaran.insertInputPairWiseComparison(0,4,random.nextInt(9)+1);
+            inputSubkriteriaAnggaran.insertInputPairWiseComparison(0,5,random.nextInt(9)+1);
+            inputSubkriteriaAnggaran.insertInputPairWiseComparison(1,2,random.nextInt(9)+1);
+            inputSubkriteriaAnggaran.insertInputPairWiseComparison(1,3,random.nextInt(9)+1);
+            inputSubkriteriaAnggaran.insertInputPairWiseComparison(1,4,random.nextInt(9)+1);
+            inputSubkriteriaAnggaran.insertInputPairWiseComparison(1,5,random.nextInt(9)+1);
+            inputSubkriteriaAnggaran.insertInputPairWiseComparison(2,3,random.nextInt(9)+1);
+            inputSubkriteriaAnggaran.insertInputPairWiseComparison(2,4,random.nextInt(9)+1);
+            inputSubkriteriaAnggaran.insertInputPairWiseComparison(2,5,random.nextInt(9)+1);
+            inputSubkriteriaAnggaran.insertInputPairWiseComparison(3,4,random.nextInt(9)+1);
+            inputSubkriteriaAnggaran.insertInputPairWiseComparison(3,5,random.nextInt(9)+1);
+            inputSubkriteriaAnggaran.insertInputPairWiseComparison(4,5,random.nextInt(9)+1);
+            listEachSubCriteriaAnggaran.add(inputSubkriteriaAnggaran);
+        }
 
         // START AHP
         // ADMINISTRASI
         ControllerAdministrasi administrasi = new ControllerAdministrasi();
         administrasi.setMatriksBerpasanganAdministrasi(inputCriteriaAdministrasi);
         administrasi.computeFinalEigenVectorAdministrasi();
-        for (int i=1;i<=8;i++) {
+        for (int i=0;i<8;i++) {
+            administrasi.setMatriksBerpasanganSubcriteria(listEachSubKriteriaAdministrasi.get(i),i);
+            administrasi.computeFinalEigenVectorSubcriteria(i);
+        }
+        for (int i=0;i<8;i++) {
             System.out.println("administrasi : " + administrasi.getEigenVectorSubcriteria(i));
+            for (int j=0;j<6;j++) {
+                System.out.println("subkriteria " + (j+1) + " : " + administrasi.getEigenVectorContractorThisSubcriteria(i,j));
+            }
         }
         // TEKNIS
         ControllerTeknis teknis = new ControllerTeknis();
         teknis.setMatriksBerpasanganTeknis(inputCriteriaTeknis);
         teknis.computeFinalEigenVectorTeknis();
-        for (int i=1;i<=6;i++) {
+        for (int i=0;i<6;i++) {
+            teknis.setMatriksBerpasanganSubcriteria(listEachSubCriteriaTeknis.get(i),i);
+            teknis.computeFinalEigenVectorSubcriteria(i);
+        }
+        for (int i=0;i<6;i++) {
             System.out.println("teknis : " + teknis.getEigenVectorSubcriteria(i));
+            for (int j=0;j<6;j++) {
+                System.out.println("subkriteria " + (j+1) + " : " + teknis.getEigenVectorContractorThisSubcriteria(i,j));
+            }
         }
         // ANGGARAN
         ControllerAnggaran anggaran = new ControllerAnggaran();
         anggaran.setMatriksBerpasanganAnggaran(inputCriteriaAnggaran);
         anggaran.computeFinalEigenVectorAnggaran();
-        for (int i=1;i<=3;i++) {
+        for (int i=0;i<3;i++) {
+            anggaran.setMatriksBerpasanganSubcriteria(listEachSubCriteriaAnggaran.get(i),i);
+            anggaran.computeFinalEigenVectorSubcriteria(i);
+        }
+        for (int i=0;i<3;i++) {
             System.out.println("anggaran : " + anggaran.getEigenVectorSubcriteria(i));
+            for (int j=0;j<6;j++) {
+                System.out.println("subkriteria " + (j+1) + " : " + anggaran.getEigenVectorContractorThisSubcriteria(i,j));
+            }
         }
     }
 }
