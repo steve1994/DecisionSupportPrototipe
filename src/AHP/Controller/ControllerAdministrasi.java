@@ -1,4 +1,4 @@
-package AHP;
+package AHP.Controller;
 
 import AHP.Model.KriteriaGrafAdministrasi;
 import AHP.Model.KriteriaGrafAnggaran;
