@@ -146,24 +146,6 @@ public class MatrixOperation {
         return multiplicationResultVector;
     }
 
-    /**
-     * Hitung array vector 2D dengan vector 2D
-     * @param arrayVector
-     * @param vector
-     * @param rowSize : menandakan jumlah kontraktor
-     * @param columnSize : menandakan jumlah kriteria
-     * @return
-     */
-    public static double[] computeArrayVectorMultiplicationWithVector(ArrayList<double[]> arrayVector, double[] vector, int rowSize, int columnSize) {
-        double[][] matriksVector = new double[rowSize][columnSize];
-        for (int i=0;i<columnSize;i++) {           // Kontraktor
-            for (int j=0;j<rowSize;j++) {           // Kriteria
-                matriksVector[i][j] = arrayVector.get(j)[i];
-            }
-        }
-        return computeMatrixMultiplicationWithVector(matriksVector,vector,rowSize,columnSize);
-    }
-
     public static void main(String[] arg) {
         /**
          *  INPUT FROM USER

@@ -201,12 +201,4 @@ public class ControllerAnggaran {
         }
         contractorAnggaranEigenVector.add(indexSubcriteria, nextIterationEigenVector);
     }
-
-    /**
-     * Calculate final eigen vector for each contractor
-     * @return
-     */
-    public double[] calculateFinalPrioritizedVector() {
-        return MatrixOperation.computeArrayVectorMultiplicationWithVector(contractorAnggaranEigenVector,subCriteriaAnggaranEigenVector,6,3);
-    }
 }

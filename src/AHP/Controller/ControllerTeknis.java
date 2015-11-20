@@ -201,12 +201,4 @@ public class ControllerTeknis {
         }
         contractorTeknisEigenVector.add(indexSubcriteria,nextIterationEigenVector);
     }
-
-    /**
-     * Calculate final eigen vector for each contractor
-     * @return
-     */
-    public double[] calculateFinalPrioritizedVector() {
-        return MatrixOperation.computeArrayVectorMultiplicationWithVector(contractorTeknisEigenVector,subCriteriaTeknisEigenVector,6,6);
-    }
 }
