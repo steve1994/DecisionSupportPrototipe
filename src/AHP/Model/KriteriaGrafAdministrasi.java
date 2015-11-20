@@ -2,6 +2,9 @@ package AHP.Model;
 
 import AHP.Utils.MatrixOperation;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 /**
  * Created by steve on 19/11/2015.
  */
@@ -25,6 +28,7 @@ public class KriteriaGrafAdministrasi {
      * Kolom : jumlah subkriteria (8)
      */
     private double[][] eigenValueEachContractorForThisSubcriteria;
+
 
     /**
      * Getter 1
