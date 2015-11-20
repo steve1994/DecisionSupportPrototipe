@@ -19,6 +19,24 @@ public class ControllerTeknis {
     private double[][] matriksBerpasanganTeknis;
 
     /**
+     * Getter 1
+     * @param indexSubcriteria
+     * @return
+     */
+    public double[] getEigenVectorContractorThisSubcriteria(int indexSubcriteria) {
+        return contractorTeknisEigenVector.get(indexSubcriteria-1);
+    }
+
+    /**
+     * Getter 2
+     * @param indexSubcriteria
+     * @return
+     */
+    public double getEigenVectorSubcriteria(int indexSubcriteria) {
+        return subCriteriaTeknisEigenVector[indexSubcriteria-1];
+    }
+
+    /**
      * Default Konstruktor
      */
     public ControllerTeknis() {

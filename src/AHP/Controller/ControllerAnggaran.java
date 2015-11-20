@@ -19,6 +19,23 @@ public class ControllerAnggaran {
     private double[][] matriksBerpasanganAnggaran;
 
     /**
+     * Getter 1
+     * @param indexSubcriteria
+     * @return
+     */
+    public double[] getEigenVectorContractorThisSubcriteria(int indexSubcriteria) {
+        return contractorAnggaranEigenVector.get(indexSubcriteria-1);
+    }
+
+    /**
+     * Getter 2
+     * @param indexSubcriteria
+     * @return
+     */
+    public double getEigenVectorSubcriteria(int indexSubcriteria) {
+        return subCriteriaAnggaranEigenVector[indexSubcriteria-1];
+    }
+    /**
      * Default Konstruktor
      */
     public ControllerAnggaran() {
