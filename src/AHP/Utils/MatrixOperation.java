@@ -93,7 +93,7 @@ public class MatrixOperation {
         double[] differenceEigenVector = computeEigenVectorDifference(eigenVector1, eigenVector2, rowSize);
         boolean isIterationContinued = false;
         for (double element : differenceEigenVector) {
-            if (element < 0.00f) {
+            if (element > 0.0001) {
                 isIterationContinued = true;
             }
         }
@@ -281,6 +281,7 @@ public class MatrixOperation {
                 System.out.println("subkriteria " + (j+1) + " : " + administrasi.getEigenVectorContractorThisSubcriteria(i,j));
             }
         }
+        System.out.println("=======================================================================================");
         // TEKNIS
         ControllerTeknis teknis = new ControllerTeknis();
         teknis.setMatriksBerpasanganTeknis(inputCriteriaTeknis);
@@ -295,12 +296,13 @@ public class MatrixOperation {
                 System.out.println("subkriteria " + (j+1) + " : " + teknis.getEigenVectorContractorThisSubcriteria(i,j));
             }
         }
+        System.out.println("=======================================================================================");
         // ANGGARAN
         ControllerAnggaran anggaran = new ControllerAnggaran();
         anggaran.setMatriksBerpasanganAnggaran(inputCriteriaAnggaran);
         anggaran.computeFinalEigenVectorAnggaran();
         for (int i=0;i<3;i++) {
-            anggaran.setMatriksBerpasanganSubcriteria(listEachSubCriteriaAnggaran.get(i),i);
+            anggaran.setMatriksBerpasanganSubcriteria(listEachSubCriteriaAnggaran.get(i), i);
             anggaran.computeFinalEigenVectorSubcriteria(i);
         }
         for (int i=0;i<3;i++) {

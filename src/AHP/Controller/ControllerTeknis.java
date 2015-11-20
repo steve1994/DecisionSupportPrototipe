@@ -142,8 +142,15 @@ public class ControllerTeknis {
         subCriteriaTeknisEigenVector = MatrixOperation.computeEigenVector(squaredMatrixThisIteration,6,6);
         // Jika eigen vector final belum akurat, lanjutkan iterasi
         while (MatrixOperation.isIterationContinued(subCriteriaTeknisEigenVector,thisIterationEigenVector,6)) {
-            thisIterationEigenVector = subCriteriaTeknisEigenVector;
-            squaredMatrixThisIteration = MatrixOperation.computeMatrixSquare(squaredMatrixThisIteration,6,6);
+            for (int i=0;i<6;i++) {
+                thisIterationEigenVector[i] = subCriteriaTeknisEigenVector[i];
+            }
+            double[][] thisIterationMatrixSquared = MatrixOperation.computeMatrixSquare(squaredMatrixThisIteration,6,6);
+            for (int i=0;i<6;i++) {
+                for (int j=0;j<6;j++) {
+                    squaredMatrixThisIteration[i][j] = thisIterationMatrixSquared[i][j];
+                }
+            }
             subCriteriaTeknisEigenVector = MatrixOperation.computeEigenVector(squaredMatrixThisIteration,6,6);
         }
     }
@@ -165,8 +172,15 @@ public class ControllerTeknis {
         double[] nextIterationEigenVector = MatrixOperation.computeEigenVector(squaredMatrixThisIteration,6,6);
         // Jika eigen vector final belum akurat, lanjutkan iterasi
         while (MatrixOperation.isIterationContinued(nextIterationEigenVector,thisIterationEigenVector,6)) {
-            thisIterationEigenVector = nextIterationEigenVector;
-            squaredMatrixThisIteration = MatrixOperation.computeMatrixSquare(squaredMatrixThisIteration,6,6);
+            for (int i=0;i<6;i++) {
+                thisIterationEigenVector[i] = nextIterationEigenVector[i];
+            }
+            double[][] thisIterationMatrixSquared = MatrixOperation.computeMatrixSquare(squaredMatrixThisIteration,6,6);
+            for (int i=0;i<6;i++) {
+                for (int j=0;j<6;j++) {
+                    squaredMatrixThisIteration[i][j] = thisIterationMatrixSquared[i][j];
+                }
+            }
             nextIterationEigenVector = MatrixOperation.computeEigenVector(squaredMatrixThisIteration,6,6);
         }
         contractorTeknisEigenVector.add(indexSubcriteria,nextIterationEigenVector);
