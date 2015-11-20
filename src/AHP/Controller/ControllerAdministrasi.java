@@ -203,4 +203,12 @@ public class ControllerAdministrasi {
         }
         contractorAdministrasiEigenVector.add(indexSubcriteria,nextIterationEigenVector);
     }
+
+    /**
+     * Calculate final eigen vector for each contractor
+     * @return
+     */
+    public double[] calculateFinalPrioritizedVector() {
+        return MatrixOperation.computeArrayVectorMultiplicationWithVector(contractorAdministrasiEigenVector,subCriteriaAdministrasiEigenVector,6,8);
+    }
 }

@@ -146,6 +146,24 @@ public class MatrixOperation {
         return multiplicationResultVector;
     }
 
+    /**
+     * Hitung array vector 2D dengan vector 2D
+     * @param arrayVector
+     * @param vector
+     * @param rowSize : menandakan jumlah kontraktor
+     * @param columnSize : menandakan jumlah kriteria
+     * @return
+     */
+    public static double[] computeArrayVectorMultiplicationWithVector(ArrayList<double[]> arrayVector, double[] vector, int rowSize, int columnSize) {
+        double[][] matriksVector = new double[rowSize][columnSize];
+        for (int i=0;i<columnSize;i++) {           // Kontraktor
+            for (int j=0;j<rowSize;j++) {           // Kriteria
+                matriksVector[i][j] = arrayVector.get(j)[i];
+            }
+        }
+        return computeMatrixMultiplicationWithVector(matriksVector,vector,rowSize,columnSize);
+    }
+
     public static void main(String[] arg) {
         /**
          *  INPUT FROM USER
@@ -280,12 +298,6 @@ public class MatrixOperation {
             administrasi.setMatriksBerpasanganSubcriteria(listEachSubKriteriaAdministrasi.get(i),i);
             administrasi.computeFinalEigenVectorSubcriteria(i);
         }
-       /* for (int i=0;i<8;i++) {
-            System.out.println("administrasi : " + administrasi.getEigenVectorSubcriteria(i));
-            for (int j=0;j<6;j++) {
-                System.out.println("subkriteria " + (j+1) + " : " + administrasi.getEigenVectorContractorThisSubcriteria(i,j));
-            }
-        } */
         // TEKNIS
         ControllerTeknis teknis = new ControllerTeknis();
         teknis.setMatriksBerpasanganTeknis(inputCriteriaTeknis);
@@ -294,12 +306,6 @@ public class MatrixOperation {
             teknis.setMatriksBerpasanganSubcriteria(listEachSubCriteriaTeknis.get(i),i);
             teknis.computeFinalEigenVectorSubcriteria(i);
         }
-        /* for (int i=0;i<6;i++) {
-            System.out.println("teknis : " + teknis.getEigenVectorSubcriteria(i));
-            for (int j=0;j<6;j++) {
-                System.out.println("subkriteria " + (j+1) + " : " + teknis.getEigenVectorContractorThisSubcriteria(i,j));
-            }
-        } */
         // ANGGARAN
         ControllerAnggaran anggaran = new ControllerAnggaran();
         anggaran.setMatriksBerpasanganAnggaran(inputCriteriaAnggaran);
@@ -308,12 +314,6 @@ public class MatrixOperation {
             anggaran.setMatriksBerpasanganSubcriteria(listEachSubCriteriaAnggaran.get(i), i);
             anggaran.computeFinalEigenVectorSubcriteria(i);
         }
-        /*for (int i=0;i<3;i++) {
-            System.out.println("anggaran : " + anggaran.getEigenVectorSubcriteria(i));
-            for (int j=0;j<6;j++) {
-                System.out.println("subkriteria " + (j+1) + " : " + anggaran.getEigenVectorContractorThisSubcriteria(i,j));
-            }
-        } */
 
         /**
          * CARI PRIORITIZED VECTOR AKHIR TIAP KONTRAKTOR (6 BUAH)
@@ -342,7 +342,7 @@ public class MatrixOperation {
         }
         double[] finalPrioritizedTeknis = evaluasiTeknis.computeEigenValueEachContractor();
         for (int i=0; i<finalPrioritizedTeknis.length; i++) {
-            System.out.println("Kriteria Teknis Kontraktor-" + (i+1) + " : " + finalPrioritizedAdministrasi[i]);
+            System.out.println("Kriteria Teknis Kontraktor-" + (i+1) + " : " + finalPrioritizedTeknis[i]);
         }
         System.out.println("=======================================================================================");
         // ANGGARAN
@@ -355,7 +355,7 @@ public class MatrixOperation {
         }
         double[] finalPrioritizedAnggaran = evaluasiAnggaran.computeEigenValueEachContractor();
         for (int i=0; i<finalPrioritizedAnggaran.length; i++) {
-            System.out.println("Kriteria Anggaran Kontraktor-" + (i+1) + " : " + finalPrioritizedAdministrasi[i]);
+            System.out.println("Kriteria Anggaran Kontraktor-" + (i+1) + " : " + finalPrioritizedAnggaran[i]);
         }
         System.out.println("=======================================================================================");
     }
