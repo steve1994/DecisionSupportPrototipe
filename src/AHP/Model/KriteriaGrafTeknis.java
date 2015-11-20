@@ -29,7 +29,7 @@ public class KriteriaGrafTeknis {
      * @return
      */
     public double getEigenValueSubCriteria(int indexSubcriteria) {
-        return eigenValueEachSubcriteria[indexSubcriteria-1];
+        return eigenValueEachSubcriteria[indexSubcriteria];
     }
 
     /**
@@ -39,7 +39,7 @@ public class KriteriaGrafTeknis {
      * @return
      */
     public double getEigenValueContractorSubCriteria(int indexContractor,int indexSubcriteria) {
-        return eigenValueEachContractorForThisSubcriteria[indexContractor-1][indexSubcriteria-1];
+        return eigenValueEachContractorForThisSubcriteria[indexContractor][indexSubcriteria];
     }
 
     /**
@@ -57,7 +57,7 @@ public class KriteriaGrafTeknis {
      */
     public void insertSubcriteriaValueContractor(int indexSubcriteria, double[] eigenVectorThisSubcriteria) {
         for (int i=0;i<6;i++) {
-            eigenValueEachContractorForThisSubcriteria[i][indexSubcriteria-1] = eigenVectorThisSubcriteria[i];
+            eigenValueEachContractorForThisSubcriteria[i][indexSubcriteria] = eigenVectorThisSubcriteria[i];
         }
     }
 
@@ -67,7 +67,7 @@ public class KriteriaGrafTeknis {
      * @param eigenValue : didapat dari eigen vector kriteria ini
      */
     public void insertSubcriteriaEigenValue(int indexSubcriteria, double eigenValue) {
-        eigenValueEachSubcriteria[indexSubcriteria-1] = eigenValue;
+        eigenValueEachSubcriteria[indexSubcriteria] = eigenValue;
     }
 
     /**

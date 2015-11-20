@@ -41,6 +41,22 @@ public class ControllerAdministrasi {
     }
 
     /**
+     * Getter 3
+     * @return
+     */
+    public ArrayList<double[]> getContractorAdministrasiEigenVector() {
+        return contractorAdministrasiEigenVector;
+    }
+
+    /**
+     * Getter 4
+     * @return
+     */
+    public double[] getSubCriteriaAdministrasiEigenVector() {
+        return subCriteriaAdministrasiEigenVector;
+    }
+
+    /**
      * Default Konstruktor
      */
     public ControllerAdministrasi() {

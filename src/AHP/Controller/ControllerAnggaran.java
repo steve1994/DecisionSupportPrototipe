@@ -38,6 +38,23 @@ public class ControllerAnggaran {
     public double getEigenVectorSubcriteria(int indexSubcriteria) {
         return subCriteriaAnggaranEigenVector[indexSubcriteria];
     }
+
+    /**
+     * Getter 3
+     * @return
+     */
+    public ArrayList<double[]> getContractorAdministrasiEigenVector() {
+        return contractorAnggaranEigenVector;
+    }
+
+    /**
+     * Getter 4
+     * @return
+     */
+    public double[] getSubCriteriaAdministrasiEigenVector() {
+        return subCriteriaAnggaranEigenVector;
+    }
+
     /**
      * Default Konstruktor
      */

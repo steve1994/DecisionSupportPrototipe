@@ -40,6 +40,22 @@ public class ControllerTeknis {
     }
 
     /**
+     * Getter 3
+     * @return
+     */
+    public ArrayList<double[]> getContractorAdministrasiEigenVector() {
+        return contractorTeknisEigenVector;
+    }
+
+    /**
+     * Getter 4
+     * @return
+     */
+    public double[] getSubCriteriaAdministrasiEigenVector() {
+        return subCriteriaTeknisEigenVector;
+    }
+
+    /**
      * Default Konstruktor
      */
     public ControllerTeknis() {

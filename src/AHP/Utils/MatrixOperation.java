@@ -3,6 +3,9 @@ package AHP.Utils;
 import AHP.Controller.ControllerAdministrasi;
 import AHP.Controller.ControllerAnggaran;
 import AHP.Controller.ControllerTeknis;
+import AHP.Model.KriteriaGrafAdministrasi;
+import AHP.Model.KriteriaGrafAnggaran;
+import AHP.Model.KriteriaGrafTeknis;
 import jdk.internal.util.xml.impl.Input;
 import model.InputPairWiseComparison;
 
@@ -144,11 +147,10 @@ public class MatrixOperation {
     }
 
     public static void main(String[] arg) {
-        int subCriteriaAdministrasi = 8;
-        int subCriteriaAnggaran = 3;
-        int subCriteriaTeknis = 6;
-        int sumContractor = 6;
-        // INPUT USER
+        /**
+         *  INPUT FROM USER
+         */
+
         Random random = new Random();
         // ADMINISTRASI
         InputPairWiseComparison inputCriteriaAdministrasi = new InputPairWiseComparison();
@@ -266,7 +268,10 @@ public class MatrixOperation {
             listEachSubCriteriaAnggaran.add(inputSubkriteriaAnggaran);
         }
 
-        // START AHP
+        /**
+         * ANALYTICAL HIERARCHICAL PROCESSING EACH CRITERIA
+         */
+
         // ADMINISTRASI
         ControllerAdministrasi administrasi = new ControllerAdministrasi();
         administrasi.setMatriksBerpasanganAdministrasi(inputCriteriaAdministrasi);
@@ -275,13 +280,12 @@ public class MatrixOperation {
             administrasi.setMatriksBerpasanganSubcriteria(listEachSubKriteriaAdministrasi.get(i),i);
             administrasi.computeFinalEigenVectorSubcriteria(i);
         }
-        for (int i=0;i<8;i++) {
+       /* for (int i=0;i<8;i++) {
             System.out.println("administrasi : " + administrasi.getEigenVectorSubcriteria(i));
             for (int j=0;j<6;j++) {
                 System.out.println("subkriteria " + (j+1) + " : " + administrasi.getEigenVectorContractorThisSubcriteria(i,j));
             }
-        }
-        System.out.println("=======================================================================================");
+        } */
         // TEKNIS
         ControllerTeknis teknis = new ControllerTeknis();
         teknis.setMatriksBerpasanganTeknis(inputCriteriaTeknis);
@@ -290,13 +294,12 @@ public class MatrixOperation {
             teknis.setMatriksBerpasanganSubcriteria(listEachSubCriteriaTeknis.get(i),i);
             teknis.computeFinalEigenVectorSubcriteria(i);
         }
-        for (int i=0;i<6;i++) {
+        /* for (int i=0;i<6;i++) {
             System.out.println("teknis : " + teknis.getEigenVectorSubcriteria(i));
             for (int j=0;j<6;j++) {
                 System.out.println("subkriteria " + (j+1) + " : " + teknis.getEigenVectorContractorThisSubcriteria(i,j));
             }
-        }
-        System.out.println("=======================================================================================");
+        } */
         // ANGGARAN
         ControllerAnggaran anggaran = new ControllerAnggaran();
         anggaran.setMatriksBerpasanganAnggaran(inputCriteriaAnggaran);
@@ -305,12 +308,56 @@ public class MatrixOperation {
             anggaran.setMatriksBerpasanganSubcriteria(listEachSubCriteriaAnggaran.get(i), i);
             anggaran.computeFinalEigenVectorSubcriteria(i);
         }
-        for (int i=0;i<3;i++) {
+        /*for (int i=0;i<3;i++) {
             System.out.println("anggaran : " + anggaran.getEigenVectorSubcriteria(i));
             for (int j=0;j<6;j++) {
                 System.out.println("subkriteria " + (j+1) + " : " + anggaran.getEigenVectorContractorThisSubcriteria(i,j));
             }
+        } */
+
+        /**
+         * CARI PRIORITIZED VECTOR AKHIR TIAP KONTRAKTOR (6 BUAH)
+         */
+
+        // ADMINISTRASI
+        KriteriaGrafAdministrasi evaluasiAdministrasi = new KriteriaGrafAdministrasi();
+        for (int i=0;i<administrasi.getSubCriteriaAdministrasiEigenVector().length;i++) {
+            evaluasiAdministrasi.insertSubcriteriaEigenValue(i,administrasi.getSubCriteriaAdministrasiEigenVector()[i]);
+            for (int j=0;j<administrasi.getContractorAdministrasiEigenVector().size();j++) {
+                evaluasiAdministrasi.insertSubcriteriaValueContractor(i,administrasi.getContractorAdministrasiEigenVector().get(j));
+            }
         }
+        double[] finalPrioritizedAdministrasi = evaluasiAdministrasi.computeEigenValueEachContractor();
+        for (int i=0; i<finalPrioritizedAdministrasi.length; i++) {
+            System.out.println("Kriteria Administrasi Kontraktor-" + (i+1) + " : " + finalPrioritizedAdministrasi[i]);
+        }
+        System.out.println("=======================================================================================");
+        // TEKNIS
+        KriteriaGrafTeknis evaluasiTeknis = new KriteriaGrafTeknis();
+        for (int i=0;i<teknis.getSubCriteriaAdministrasiEigenVector().length;i++) {
+            evaluasiTeknis.insertSubcriteriaEigenValue(i,teknis.getSubCriteriaAdministrasiEigenVector()[i]);
+            for (int j=0;j<teknis.getContractorAdministrasiEigenVector().size();j++) {
+                evaluasiTeknis.insertSubcriteriaValueContractor(i,teknis.getContractorAdministrasiEigenVector().get(j));
+            }
+        }
+        double[] finalPrioritizedTeknis = evaluasiTeknis.computeEigenValueEachContractor();
+        for (int i=0; i<finalPrioritizedTeknis.length; i++) {
+            System.out.println("Kriteria Teknis Kontraktor-" + (i+1) + " : " + finalPrioritizedAdministrasi[i]);
+        }
+        System.out.println("=======================================================================================");
+        // ANGGARAN
+        KriteriaGrafAnggaran evaluasiAnggaran = new KriteriaGrafAnggaran();
+        for (int i=0;i<anggaran.getSubCriteriaAdministrasiEigenVector().length;i++) {
+            evaluasiAnggaran.insertSubcriteriaEigenValue(i,anggaran.getSubCriteriaAdministrasiEigenVector()[i]);
+            for (int j=0;j<anggaran.getContractorAdministrasiEigenVector().size();j++) {
+                evaluasiAnggaran.insertSubcriteriaValueContractor(i,anggaran.getContractorAdministrasiEigenVector().get(j));
+            }
+        }
+        double[] finalPrioritizedAnggaran = evaluasiAnggaran.computeEigenValueEachContractor();
+        for (int i=0; i<finalPrioritizedAnggaran.length; i++) {
+            System.out.println("Kriteria Anggaran Kontraktor-" + (i+1) + " : " + finalPrioritizedAdministrasi[i]);
+        }
+        System.out.println("=======================================================================================");
     }
 }
 
