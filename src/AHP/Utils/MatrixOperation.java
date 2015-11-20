@@ -6,6 +6,7 @@ import AHP.Controller.ControllerTeknis;
 import AHP.Model.KriteriaGrafAdministrasi;
 import AHP.Model.KriteriaGrafAnggaran;
 import AHP.Model.KriteriaGrafTeknis;
+import CPI.ControllerCPI;
 import jdk.internal.util.xml.impl.Input;
 import model.InputPairWiseComparison;
 
@@ -340,6 +341,28 @@ public class MatrixOperation {
             System.out.println("Kriteria Anggaran Kontraktor-" + (i+1) + " : " + finalPrioritizedAnggaran[i]);
         }
         System.out.println("=======================================================================================");
+
+        /**
+         * COMPOSITE PERFORMANCE INDEX FROM AHP RESULT
+         */
+
+        /**
+         * Bobot kriteria Administrasi : 1.0
+         * Bobot kriteria Teknis : 5.0
+         * Bobot kriteria Anggaran : 3.0
+         */
+        ControllerCPI evalCPI = new ControllerCPI(1.0,2.0,10.0);
+        for (int i=0;i<3;i++) {
+            switch (i) {
+                case 1 : evalCPI.insertOneCriteriaPrioritizedVector(i,finalPrioritizedAdministrasi); break;
+                case 2 : evalCPI.insertOneCriteriaPrioritizedVector(i,finalPrioritizedTeknis); break;
+                case 3 : evalCPI.insertOneCriteriaPrioritizedVector(i,finalPrioritizedAnggaran); break;
+            }
+        }
+        Double[] sortedWeightRankingCPI = evalCPI.getRankingWeightEachContractor();
+        for (int i=0;i<sortedWeightRankingCPI.length;i++) {
+            System.out.println(sortedWeightRankingCPI[i]);
+        }
     }
 }
 

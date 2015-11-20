@@ -2,10 +2,14 @@ package CPI;
 
 import AHP.Utils.MatrixOperation;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Collections;
+
 /**
  * Created by steve on 20/11/2015.
  */
-public class Controller {
+public class ControllerCPI {
     /**
      * Baris : Jumlah kontraktor (6 buah)
      * Kolom : Jumlah kriteria dipakai (3 buah)
@@ -20,7 +24,7 @@ public class Controller {
     /**
      * Konstruktor 1
      */
-    public Controller() {
+    public ControllerCPI() {
         finalPrioritizedVectorEachCriteria = new double[6][3];
         weightEachCriteria = new double[3];
         weightEachCriteria[0] = 3.0;
@@ -34,7 +38,7 @@ public class Controller {
      * @param weightCriteria2
      * @param weightCriteria3
      */
-    public Controller(double weightCriteria1, double weightCriteria2, double weightCriteria3) {
+    public ControllerCPI(double weightCriteria1, double weightCriteria2, double weightCriteria3) {
         finalPrioritizedVectorEachCriteria = new double[6][3];
         weightEachCriteria = new double[3];
         weightEachCriteria[0] = weightCriteria1;
@@ -55,5 +59,18 @@ public class Controller {
         }
     }
 
-
+    /**
+     * Hitung bobot ranking tiap kriteria yang SUDAH diurutkan
+     * @return
+     */
+    public Double[] getRankingWeightEachContractor() {
+        Double[] weightRankingResult = new Double[6];
+        for (int i=0;i<6;i++) {
+            for (int j=0;j<3;j++) {
+                weightRankingResult[i] = finalPrioritizedVectorEachCriteria[i][j] * weightEachCriteria[j];
+            }
+        }
+        Arrays.sort(weightRankingResult, Collections.reverseOrder());
+        return weightRankingResult;
+    }
 }
