@@ -80,8 +80,8 @@
       <file leaf-file-name="pembukaController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/pembukaController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="595">
-              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="595">
+              <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,7 +95,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.4" vertical-offset="136" max-vertical-offset="867">
+            <state vertical-scroll-proportion="-6.1666665" vertical-offset="53" max-vertical-offset="867">
               <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
               <folding />
             </state>
@@ -105,8 +105,8 @@
       <file leaf-file-name="inputKontraktorController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/inputKontraktorController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7060519" vertical-offset="1336" max-vertical-offset="1734">
-              <caret line="93" column="34" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
+            <state vertical-scroll-proportion="1.3429395" vertical-offset="197" max-vertical-offset="1751">
+              <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -250,9 +250,11 @@
         <option value="$PROJECT_DIR$/src/sample/layarpertama/sample.fxml" />
         <option value="$PROJECT_DIR$/src/sample/layar_pembuka.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/sample/pembukaController.java" />
         <option value="$PROJECT_DIR$/src/sample/state/staticVars.java" />
         <option value="$PROJECT_DIR$/src/sample/input_kontraktor.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/layar_input_kontraktor/inputKontraktorController.java" />
+        <option value="$PROJECT_DIR$/src/sample/layar_pertama/pembukaController.java" />
+        <option value="$PROJECT_DIR$/src/sample/pembukaController.java" />
         <option value="$PROJECT_DIR$/src/sample/inputKontraktorController.java" />
       </list>
     </option>
@@ -567,13 +569,16 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Informatika\Materi Semester 7\IF4043 Sistem Informasi Lanjut\Tugas\Kelompok\Decision Support System Prototipe\src\sample" />
+      <recent name="D:\Informatika\Materi Semester 7\IF4043 Sistem Informasi Lanjut\Tugas\Kelompok\Decision Support System Prototipe\src\sample\layar_input_kontraktor" />
+      <recent name="D:\Informatika\Materi Semester 7\IF4043 Sistem Informasi Lanjut\Tugas\Kelompok\Decision Support System Prototipe\src\sample\layar_pertama" />
       <recent name="D:\Informatika\Materi Semester 7\IF4043 Sistem Informasi Lanjut\Tugas\Kelompok\Decision Support System Prototipe\src\sample\layarpertama" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="sample" />
+      <recent name="sample.layar_input_kontraktor" />
+      <recent name="sample.layar_pertama" />
       <recent name="sample.layarpertama" />
       <recent name="ML.Controller" />
-      <recent name="AHP.Controller" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -944,12 +949,12 @@
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1447854677249" duration="1439000" />
-      <workItem from="1447913994902" duration="80503000" />
+      <workItem from="1447913994902" duration="81536000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83244000" />
+    <option name="totallyTimeSpent" value="84277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1311,27 +1316,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/input_kontraktor.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4" vertical-offset="136" max-vertical-offset="867">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/pembukaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="595">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Contractor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="816">
@@ -1342,10 +1326,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/input_kontraktor.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.1666665" vertical-offset="53" max-vertical-offset="867">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/pembukaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="242" max-vertical-offset="595">
+          <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/inputKontraktorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7060519" vertical-offset="1336" max-vertical-offset="1734">
-          <caret line="93" column="34" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
+        <state vertical-scroll-proportion="1.3429395" vertical-offset="197" max-vertical-offset="1751">
+          <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

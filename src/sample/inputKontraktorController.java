@@ -14,30 +14,30 @@ import sample.state.staticVars;
  * Created by steve on 21/11/2015.
  */
 public class inputKontraktorController {
-    @FXML private TextField namaKontraktor1;
-    @FXML private TextField alamatKontraktor1;
-    @FXML private TextField visiKontraktor1;
-    @FXML private TextField misiKontraktor1;
-    @FXML private TextField namaKontraktor2;
-    @FXML private TextField alamatKontraktor2;
-    @FXML private TextField visiKontraktor2;
-    @FXML private TextField misiKontraktor2;
-    @FXML private TextField namaKontraktor3;
-    @FXML private TextField alamatKontraktor3;
-    @FXML private TextField visiKontraktor3;
-    @FXML private TextField misiKontraktor3;
-    @FXML private TextField namaKontraktor4;
-    @FXML private TextField alamatKontraktor4;
-    @FXML private TextField visiKontraktor4;
-    @FXML private TextField misiKontraktor4;
-    @FXML private TextField namaKontraktor5;
-    @FXML private TextField alamatKontraktor5;
-    @FXML private TextField visiKontraktor5;
-    @FXML private TextField misiKontraktor5;
-    @FXML private TextField namaKontraktor6;
-    @FXML private TextField alamatKontraktor6;
-    @FXML private TextField visiKontraktor6;
-    @FXML private TextField misiKontraktor6;
+    @FXML private TextField namaKontraktor1 = new TextField();
+    @FXML private TextField alamatKontraktor1 = new TextField();
+    @FXML private TextField visiKontraktor1 = new TextField();
+    @FXML private TextField misiKontraktor1 = new TextField();
+    @FXML private TextField namaKontraktor2 = new TextField();
+    @FXML private TextField alamatKontraktor2 = new TextField();
+    @FXML private TextField visiKontraktor2 = new TextField();
+    @FXML private TextField misiKontraktor2 = new TextField();
+    @FXML private TextField namaKontraktor3 = new TextField();
+    @FXML private TextField alamatKontraktor3 = new TextField();
+    @FXML private TextField visiKontraktor3 = new TextField();
+    @FXML private TextField misiKontraktor3 = new TextField();
+    @FXML private TextField namaKontraktor4 = new TextField();
+    @FXML private TextField alamatKontraktor4 = new TextField();
+    @FXML private TextField visiKontraktor4 = new TextField();
+    @FXML private TextField misiKontraktor4 = new TextField();
+    @FXML private TextField namaKontraktor5 = new TextField();
+    @FXML private TextField alamatKontraktor5 = new TextField();
+    @FXML private TextField visiKontraktor5 = new TextField();
+    @FXML private TextField misiKontraktor5 = new TextField();
+    @FXML private TextField namaKontraktor6 = new TextField();
+    @FXML private TextField alamatKontraktor6 = new TextField();
+    @FXML private TextField visiKontraktor6 = new TextField();
+    @FXML private TextField misiKontraktor6 = new TextField();
 
     public void handleContractorInput(ActionEvent actionEvent) {
         // Kontraktor 1
@@ -92,5 +92,6 @@ public class inputKontraktorController {
         listContractor.insertNewContractor(contractor6);
         staticVars.listInputContractor = listContractor;
         // Pindah layar berikutnya
+
     }
 }
