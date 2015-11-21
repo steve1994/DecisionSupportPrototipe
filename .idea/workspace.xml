@@ -67,8 +67,8 @@
       <file leaf-file-name="ControllerML.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ML/Controller/ControllerML.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="7.820359" vertical-offset="5259" max-vertical-offset="8602">
-              <caret line="463" column="35" selection-start-line="463" selection-start-column="35" selection-end-line="463" selection-end-column="35" />
+            <state vertical-scroll-proportion="3.697605" vertical-offset="5701" max-vertical-offset="7208">
+              <caret line="408" column="44" selection-start-line="408" selection-start-column="44" selection-end-line="408" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1101#1102#0" expanded="true" />
@@ -96,21 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleKMeans.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/weka.jar!/weka/clusterers/SimpleKMeans.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.6792452" vertical-offset="1284" max-vertical-offset="12886">
-              <caret line="110" column="30" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="oneRecordKriteria.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ML/Model/oneRecordKriteria.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1978" max-vertical-offset="2312">
-              <caret line="121" column="21" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1281" max-vertical-offset="2210">
+              <caret line="91" column="50" selection-start-line="91" selection-start-column="50" selection-end-line="91" selection-end-column="50" />
               <folding>
                 <element signature="e#586#587#0" expanded="true" />
                 <element signature="e#640#641#0" expanded="true" />
@@ -799,12 +789,12 @@
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1447854677249" duration="1439000" />
-      <workItem from="1447913994902" duration="69966000" />
+      <workItem from="1447913994902" duration="70754000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72707000" />
+    <option name="totallyTimeSpent" value="73495000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1148,8 +1138,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ML/Model/oneRecordKriteria.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1978" max-vertical-offset="2312">
-          <caret line="121" column="21" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1281" max-vertical-offset="2210">
+          <caret line="91" column="50" selection-start-line="91" selection-start-column="50" selection-end-line="91" selection-end-column="50" />
           <folding>
             <element signature="e#586#587#0" expanded="true" />
             <element signature="e#640#641#0" expanded="true" />
@@ -1163,8 +1153,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ML/Controller/ControllerML.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="7.820359" vertical-offset="5259" max-vertical-offset="8602">
-          <caret line="463" column="35" selection-start-line="463" selection-start-column="35" selection-end-line="463" selection-end-column="35" />
+        <state vertical-scroll-proportion="3.697605" vertical-offset="5701" max-vertical-offset="7208">
+          <caret line="408" column="44" selection-start-line="408" selection-start-column="44" selection-end-line="408" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1101#1102#0" expanded="true" />
