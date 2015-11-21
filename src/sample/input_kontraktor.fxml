@@ -8,39 +8,38 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="600.0" xmlns:fx="http://javafx.com/javafx/1" fx:controller="sample.inputKontraktorController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="sample.inputKontraktorController">
    <children>
       <Label layoutX="24.0" layoutY="31.0" text="KONTRAKTOR 1" />
-      <TextField layoutX="24.0" layoutY="58.0" prefHeight="25.0" prefWidth="166.0" promptText="nama badan / perorangan" />
-      <TextField layoutX="24.0" layoutY="95.0" prefHeight="25.0" prefWidth="166.0" promptText="alamat badan atau perorangan" />
-      <TextField layoutX="24.0" layoutY="130.0" prefHeight="25.0" prefWidth="166.0" promptText="visi" />
-      <TextField layoutX="24.0" layoutY="167.0" prefHeight="25.0" prefWidth="166.0" promptText="misi" />
-      <TextField layoutX="217.0" layoutY="167.0" prefHeight="25.0" prefWidth="166.0" promptText="misi" />
-      <TextField layoutX="217.0" layoutY="130.0" prefHeight="25.0" prefWidth="166.0" promptText="visi" />
-      <TextField layoutX="217.0" layoutY="95.0" prefHeight="25.0" prefWidth="166.0" promptText="alamat badan atau perorangan" />
-      <TextField layoutX="217.0" layoutY="58.0" prefHeight="25.0" prefWidth="166.0" promptText="nama badan / perorangan" />
+      <TextField id="namaKontraktor1" layoutX="24.0" layoutY="58.0" prefHeight="25.0" prefWidth="166.0" promptText="nama badan / perorangan" />
+      <TextField id="alamatKontraktor1" layoutX="24.0" layoutY="95.0" prefHeight="25.0" prefWidth="166.0" promptText="alamat badan atau perorangan" />
+      <TextField id="visiKontraktor1" layoutX="24.0" layoutY="130.0" prefHeight="25.0" prefWidth="166.0" promptText="visi" />
+      <TextField id="misiKontraktor1" layoutX="24.0" layoutY="167.0" prefHeight="25.0" prefWidth="166.0" promptText="misi" />
+      <TextField id="misiKontraktor2" layoutX="217.0" layoutY="167.0" prefHeight="25.0" prefWidth="166.0" promptText="misi" />
+      <TextField id="visiKontraktor2" layoutX="217.0" layoutY="130.0" prefHeight="25.0" prefWidth="166.0" promptText="visi" />
+      <TextField id="alamatKontraktor2" layoutX="217.0" layoutY="95.0" prefHeight="25.0" prefWidth="166.0" promptText="alamat badan atau perorangan" />
+      <TextField id="namaKontraktor2" layoutX="217.0" layoutY="58.0" prefHeight="25.0" prefWidth="166.0" promptText="nama badan / perorangan" />
       <Label layoutX="217.0" layoutY="31.0" text="KONTRAKTOR 2" />
-      <TextField layoutX="414.0" layoutY="167.0" prefHeight="25.0" prefWidth="166.0" promptText="misi" />
-      <TextField layoutX="414.0" layoutY="130.0" prefHeight="25.0" prefWidth="166.0" promptText="visi" />
-      <TextField layoutX="414.0" layoutY="95.0" prefHeight="25.0" prefWidth="166.0" promptText="alamat badan atau perorangan" />
-      <TextField layoutX="414.0" layoutY="58.0" prefHeight="25.0" prefWidth="166.0" promptText="nama badan / perorangan" />
+      <TextField id="misiKontraktor3" layoutX="414.0" layoutY="167.0" prefHeight="25.0" prefWidth="166.0" promptText="misi" />
+      <TextField id="visiKontraktor3" layoutX="414.0" layoutY="130.0" prefHeight="25.0" prefWidth="166.0" promptText="visi" />
+      <TextField id="alamatKontraktor3" layoutX="414.0" layoutY="95.0" prefHeight="25.0" prefWidth="166.0" promptText="alamat badan atau perorangan" />
+      <TextField id="namaKontraktor3" layoutX="414.0" layoutY="58.0" prefHeight="25.0" prefWidth="166.0" promptText="nama badan / perorangan" />
       <Label layoutX="414.0" layoutY="31.0" text="KONTRAKTOR 3" />
       <Label layoutX="415.0" layoutY="214.0" text="KONTRAKTOR 6" />
-      <TextField layoutX="415.0" layoutY="241.0" prefHeight="25.0" prefWidth="166.0" promptText="nama badan / perorangan" />
-      <TextField layoutX="415.0" layoutY="278.0" prefHeight="25.0" prefWidth="166.0" promptText="alamat badan atau perorangan" />
-      <TextField layoutX="415.0" layoutY="313.0" prefHeight="25.0" prefWidth="166.0" promptText="visi" />
-      <TextField layoutX="415.0" layoutY="350.0" prefHeight="25.0" prefWidth="166.0" promptText="misi" />
+      <TextField id="namaKontraktor6" layoutX="415.0" layoutY="241.0" prefHeight="25.0" prefWidth="166.0" promptText="nama badan / perorangan" />
+      <TextField id="alamatKontraktor6" layoutX="415.0" layoutY="278.0" prefHeight="25.0" prefWidth="166.0" promptText="alamat badan atau perorangan" />
+      <TextField id="visiKontraktor6" layoutX="415.0" layoutY="313.0" prefHeight="25.0" prefWidth="166.0" promptText="visi" />
+      <TextField id="misiKontraktor6" layoutX="415.0" layoutY="350.0" prefHeight="25.0" prefWidth="166.0" promptText="misi" />
       <Label layoutX="218.0" layoutY="214.0" text="KONTRAKTOR 5" />
-      <TextField layoutX="218.0" layoutY="241.0" prefHeight="25.0" prefWidth="166.0" promptText="nama badan / perorangan" />
-      <TextField layoutX="218.0" layoutY="278.0" prefHeight="25.0" prefWidth="166.0" promptText="alamat badan atau perorangan" />
-      <TextField layoutX="218.0" layoutY="313.0" prefHeight="25.0" prefWidth="166.0" promptText="visi" />
-      <TextField layoutX="218.0" layoutY="350.0" prefHeight="25.0" prefWidth="166.0" promptText="misi" />
-      <TextField layoutX="25.0" layoutY="350.0" prefHeight="25.0" prefWidth="166.0" promptText="misi" />
-      <TextField layoutX="25.0" layoutY="313.0" prefHeight="25.0" prefWidth="166.0" promptText="visi" />
-      <TextField layoutX="25.0" layoutY="278.0" prefHeight="25.0" prefWidth="166.0" promptText="alamat badan atau perorangan" />
-      <TextField layoutX="25.0" layoutY="241.0" prefHeight="25.0" prefWidth="166.0" promptText="nama badan / perorangan" />
+      <TextField id="namaKontraktor5" layoutX="218.0" layoutY="241.0" prefHeight="25.0" prefWidth="166.0" promptText="nama badan / perorangan" />
+      <TextField id="alamatKontraktor5" layoutX="218.0" layoutY="278.0" prefHeight="25.0" prefWidth="166.0" promptText="alamat badan atau perorangan" />
+      <TextField id="visiKontraktor5" layoutX="218.0" layoutY="313.0" prefHeight="25.0" prefWidth="166.0" promptText="visi" />
+      <TextField id="misiKontraktor5" layoutX="218.0" layoutY="350.0" prefHeight="25.0" prefWidth="166.0" promptText="misi" />
+      <TextField id="misiKontraktor4" layoutX="25.0" layoutY="350.0" prefHeight="25.0" prefWidth="166.0" promptText="misi" />
+      <TextField id="visiKontraktor4" layoutX="25.0" layoutY="313.0" prefHeight="25.0" prefWidth="166.0" promptText="visi" />
+      <TextField id="alamatKontraktor4" layoutX="25.0" layoutY="278.0" prefHeight="25.0" prefWidth="166.0" promptText="alamat badan atau perorangan" />
+      <TextField id="namaKontraktor4" layoutX="25.0" layoutY="241.0" prefHeight="25.0" prefWidth="166.0" promptText="nama badan / perorangan" />
       <Label layoutX="25.0" layoutY="214.0" text="KONTRAKTOR 4" />
-      <Button onAction="#handleContractorInput" layoutX="218.0" layoutY="400.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="SIMPAN" />
+      <Button layoutX="218.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleContractorInput" prefHeight="25.0" prefWidth="150.0" text="SIMPAN" />
    </children>
 </AnchorPane>
