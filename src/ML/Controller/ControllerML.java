@@ -8,6 +8,10 @@ import weka.core.FastVector;
 import weka.core.Instance;
 import weka.core.Instances;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Iterator;
@@ -91,6 +95,11 @@ public class ControllerML {
         Attribute subKriteriaAdministrasi6 = new Attribute("adm6");
         Attribute subKriteriaAdministrasi7 = new Attribute("adm7");
         Attribute subKriteriaAdministrasi8 = new Attribute("adm8");
+        FastVector labelAdm = new FastVector();
+        labelAdm.addElement("1");
+        labelAdm.addElement("2");
+        labelAdm.addElement("3");
+        Attribute clusterAdministrasi = new Attribute("clusterAdm",labelAdm);
         FastVector attributesInstanceAdministrasi = new FastVector();
         attributesInstanceAdministrasi.addElement(subKriteriaAdministrasi1);
         attributesInstanceAdministrasi.addElement(subKriteriaAdministrasi2);
@@ -100,7 +109,9 @@ public class ControllerML {
         attributesInstanceAdministrasi.addElement(subKriteriaAdministrasi6);
         attributesInstanceAdministrasi.addElement(subKriteriaAdministrasi7);
         attributesInstanceAdministrasi.addElement(subKriteriaAdministrasi8);
+        attributesInstanceAdministrasi.addElement(clusterAdministrasi);
         listRecordsArffForAdministrasi = new Instances("Administrasi Dataset",attributesInstanceAdministrasi,0);
+       // listRecordsArffForAdministrasi.setClass(clusterAdministrasi);
         // Subkriteria TEKNIS
         Attribute subKriteriaTeknis1 = new Attribute("tek1");
         Attribute subKriteriaTeknis2 = new Attribute("tek2");
@@ -108,6 +119,11 @@ public class ControllerML {
         Attribute subKriteriaTeknis4 = new Attribute("tek4");
         Attribute subKriteriaTeknis5 = new Attribute("tek5");
         Attribute subKriteriaTeknis6 = new Attribute("tek6");
+        FastVector labelTek = new FastVector();
+        labelTek.addElement("1");
+        labelTek.addElement("2");
+        labelTek.addElement("3");
+        Attribute clusterTeknis = new Attribute("clusterTek",labelTek);
         FastVector attributesInstanceTeknis = new FastVector();
         attributesInstanceTeknis.addElement(subKriteriaTeknis1);
         attributesInstanceTeknis.addElement(subKriteriaTeknis2);
@@ -115,16 +131,25 @@ public class ControllerML {
         attributesInstanceTeknis.addElement(subKriteriaTeknis4);
         attributesInstanceTeknis.addElement(subKriteriaTeknis5);
         attributesInstanceTeknis.addElement(subKriteriaTeknis6);
+        attributesInstanceTeknis.addElement(clusterTeknis);
         listRecordsArffForTeknis = new Instances("Teknis Dataset",attributesInstanceTeknis,0);
+       // listRecordsArffForTeknis.setClass(clusterTeknis);
         // Subkriteria ANGGARAN
         Attribute subKriteriaAnggaran1 = new Attribute("ang1");
         Attribute subKriteriaAnggaran2 = new Attribute("ang2");
         Attribute subKriteriaAnggaran3 = new Attribute("ang3");
+        FastVector labelAng = new FastVector();
+        labelAng.addElement("1");
+        labelAng.addElement("2");
+        labelAng.addElement("3");
+        Attribute clusterAnggaran = new Attribute("clusterAng",labelAng);
         FastVector attributesInstanceAnggaran = new FastVector();
         attributesInstanceAnggaran.addElement(subKriteriaAnggaran1);
         attributesInstanceAnggaran.addElement(subKriteriaAnggaran2);
         attributesInstanceAnggaran.addElement(subKriteriaAnggaran3);
+        attributesInstanceAnggaran.addElement(clusterAnggaran);
         listRecordsArffForAnggaran = new Instances("Anggaran Dataset",attributesInstanceAnggaran,0);
+       // listRecordsArffForAnggaran.setClass(clusterAnggaran);
     }
 
     /**
@@ -137,7 +162,12 @@ public class ControllerML {
             ArrayList<Integer> listAttributesAdministrasiScore = criteria.getListScoringKriteriaAdministrasi();
             double[] valuesAdministrasi = new double[listRecordsArffForAdministrasi.numAttributes()];
             for (int i=0;i<valuesAdministrasi.length;i++) {
-                valuesAdministrasi[i] = listAttributesAdministrasiScore.get(i);
+                if (i == valuesAdministrasi.length-1) {
+                    Random random = new Random();
+                    valuesAdministrasi[i] = listRecordsArffForAdministrasi.attribute(i).indexOfValue(String.valueOf(random.nextInt(3)+1));
+                } else {
+                    valuesAdministrasi[i] = listAttributesAdministrasiScore.get(i);
+                }
             }
             Instance administrasi = new Instance(1.0,valuesAdministrasi);
             listRecordsArffForAdministrasi.add(administrasi);
@@ -145,7 +175,12 @@ public class ControllerML {
             ArrayList<Integer> listAttributesTeknisScore = criteria.getListScoringKriteriaTeknis();
             double[] valuesTeknis = new double[listRecordsArffForTeknis.numAttributes()];
             for (int i=0;i<valuesTeknis.length;i++) {
-                valuesTeknis[i] = listAttributesTeknisScore.get(i);
+                if (i == valuesTeknis.length-1) {
+                    Random random = new Random();
+                    valuesTeknis[i] = listRecordsArffForTeknis.attribute(i).indexOfValue(String.valueOf(random.nextInt(3)+1));
+                } else {
+                    valuesTeknis[i] = listAttributesTeknisScore.get(i);
+                }
             }
             Instance teknis = new Instance(1.0,valuesTeknis);
             listRecordsArffForTeknis.add(teknis);
@@ -153,7 +188,12 @@ public class ControllerML {
             ArrayList<Integer> listAttributesAnggaranScore = criteria.getListScoringKriteriaAnggaran();
             double[] valuesAnggaran = new double[listRecordsArffForAnggaran.numAttributes()];
             for (int i=0;i<valuesAnggaran.length;i++) {
-                valuesAnggaran[i] = listAttributesAnggaranScore.get(i);
+                if (i == valuesAnggaran.length-1) {
+                    Random random = new Random();
+                    valuesAnggaran[i] = listRecordsArffForAnggaran.attribute(i).indexOfValue(String.valueOf(random.nextInt(3)+1));
+                } else {
+                    valuesAnggaran[i] = listAttributesAnggaranScore.get(i);
+                }
             }
             Instance anggaran = new Instance(1.0,valuesAnggaran);
             listRecordsArffForAnggaran.add(anggaran);
@@ -345,15 +385,27 @@ public class ControllerML {
         }
     }
 
+    public static BufferedReader readDataFile(String filename) {
+        BufferedReader inputReader = null;
+
+        try {
+            inputReader = new BufferedReader(new FileReader(filename));
+        } catch (FileNotFoundException ex) {
+            System.err.println("File not found: " + filename);
+        }
+
+        return inputReader;
+    }
+
     public static void main(String[] arg) {
-        Random random = new Random();
+       /* Random random = new Random();
         ControllerML controller = new ControllerML();
         // INPUT SCORE KONTRAKTOR UNTUK SEMUA KRITERIA
         for (int i=0;i<6;i++) {
             oneRecordKriteria inputThisKontraktor = new oneRecordKriteria();
-            inputThisKontraktor.insertAdministrasiScore(random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1);
-            inputThisKontraktor.insertTeknisScore(random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1);
-            inputThisKontraktor.insertAnggaranScore(random.nextInt(10)+1,random.nextInt(10)+1,random.nextInt(10)+1);
+            inputThisKontraktor.insertAdministrasiScore(random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(3)+1);
+            inputThisKontraktor.insertTeknisScore(random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(3) + 1);
+            inputThisKontraktor.insertAnggaranScore(random.nextInt(10)+1,random.nextInt(10)+1,random.nextInt(10)+1, random.nextInt(3) + 1);
             controller.insertNewRecordContractor(inputThisKontraktor);
         }
         // KONFIG INSTANCE WEKA SEMUA KRITERIA
@@ -385,6 +437,64 @@ public class ControllerML {
         controller.outputClusterResult(1,1); // teknis
         System.out.println("=======================================================");
         controller.outputClusterResult(2,1); // anggaran
-        System.out.println("=======================================================");
+        System.out.println("======================================================="); */
+
+        Random random = new Random();
+        ControllerML controller = new ControllerML();
+        // INPUT SCORE KONTRAKTOR UNTUK SEMUA KRITERIA
+        for (int i=0;i<6;i++) {
+            oneRecordKriteria inputThisKontraktor = new oneRecordKriteria();
+            inputThisKontraktor.insertAdministrasiScore(random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(3)+1);
+            inputThisKontraktor.insertTeknisScore(random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(3) + 1);
+            inputThisKontraktor.insertAnggaranScore(random.nextInt(10)+1,random.nextInt(10)+1,random.nextInt(10)+1, random.nextInt(3) + 1);
+            controller.insertNewRecordContractor(inputThisKontraktor);
+        }
+        // KONFIG INSTANCE WEKA SEMUA KRITERIA
+        controller.configArffInstancesEachCriteria();
+        // SESUDAH DICONFIG DATA SKOR DILOAD KE INSTANCE WEKA (DATA TERISI DI SINI)
+        controller.loadArffFromRawRecords();
+
+        SimpleKMeans kmeans = new SimpleKMeans();
+
+        kmeans.setSeed(5);
+
+        //important parameter to set: preserver order, number of cluster.
+        kmeans.setPreserveInstancesOrder(true);
+        try {
+            kmeans.setNumClusters(3);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        /*BufferedReader datafile = readDataFile("D:/Weka-3-6/data/iris_numeric.arff");
+        Instances data = null;
+        try {
+            data = new Instances(datafile);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } */
+        Instances data = controller.getListRecordsArffForAnggaran();
+
+
+        try {
+            kmeans.buildClusterer(data);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        // This array returns the cluster number (starting with 0) for each instance
+        // The array has as many elements as the number of instances
+        int[] assignments = new int[0];
+        try {
+            assignments = kmeans.getAssignments();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        int i=0;
+        for(int clusterNum : assignments) {
+            System.out.printf("Instance %d -> Cluster %d \n", i, clusterNum);
+            i++;
+        }
     }
 }
