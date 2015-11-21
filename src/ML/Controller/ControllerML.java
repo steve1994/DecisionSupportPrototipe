@@ -9,6 +9,9 @@ import weka.core.Instance;
 import weka.core.Instances;
 
 import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.Iterator;
+import java.util.Random;
 
 /**
  * Created by steve on 21/11/2015.
@@ -36,6 +39,30 @@ public class ControllerML {
 
     public Instances getListRecordsArffForAnggaran() {
         return listRecordsArffForAnggaran;
+    }
+
+    public EM getEMClusteringAdministrasi() {
+        return EMClusteringAdministrasi;
+    }
+
+    public SimpleKMeans getSimpleClusteringAnggaran() {
+        return simpleClusteringAnggaran;
+    }
+
+    public SimpleKMeans getSimpleClusteringTeknis() {
+        return simpleClusteringTeknis;
+    }
+
+    public SimpleKMeans getSimpleClusteringAdministrasi() {
+        return simpleClusteringAdministrasi;
+    }
+
+    public EM getEMClusteringTeknis() {
+        return EMClusteringTeknis;
+    }
+
+    public EM getEMClusteringAnggaran() {
+        return EMClusteringAnggaran;
     }
 
     // KONSTRUKTOR
@@ -140,7 +167,7 @@ public class ControllerML {
     private void configKMeansClustererEachCriteria() {
         // Administrasi
         simpleClusteringAdministrasi = new SimpleKMeans();
-        simpleClusteringAdministrasi.setSeed(3);
+       // simpleClusteringAdministrasi.setSeed(5);
         simpleClusteringAdministrasi.setPreserveInstancesOrder(true);
         try {
             simpleClusteringAdministrasi.setNumClusters(3);
@@ -149,7 +176,7 @@ public class ControllerML {
         }
         // Teknis
         simpleClusteringAnggaran = new SimpleKMeans();
-        simpleClusteringAnggaran.setSeed(3);
+       // simpleClusteringAnggaran.setSeed(5);
         simpleClusteringAnggaran.setPreserveInstancesOrder(true);
         try {
             simpleClusteringAnggaran.setNumClusters(3);
@@ -158,7 +185,7 @@ public class ControllerML {
         }
         // Anggaran
         simpleClusteringTeknis = new SimpleKMeans();
-        simpleClusteringTeknis.setSeed(3);
+       // simpleClusteringTeknis.setSeed(5);
         simpleClusteringTeknis.setPreserveInstancesOrder(true);
         try {
             simpleClusteringTeknis.setNumClusters(3);
@@ -219,8 +246,11 @@ public class ControllerML {
      * @param clusteringType : 1 (K-means), 2 (EM)
      */
     public void buildClusteringCriteria(int indexCriteria, int clusteringType) {
-        configKMeansClustererEachCriteria();
-        configEMClustererEachCriteria();
+        if (clusteringType == 1) {
+            configKMeansClustererEachCriteria();
+        } else if (clusteringType == 2) {
+            configEMClustererEachCriteria();
+        }
         switch (indexCriteria) {
             case 0 :
                 if (clusteringType == 1) {
@@ -316,28 +346,45 @@ public class ControllerML {
     }
 
     public static void main(String[] arg) {
-       /* SimpleKMeans kmeans = new SimpleKMeans();
-
-        kmeans.setSeed(10);
-
-        //important parameter to set: preserver order, number of cluster.
-        kmeans.setPreserveInstancesOrder(true);
-        kmeans.setNumClusters(5);
-
-        BufferedReader datafile = readDataFile("C:/Users/ryan/workspace/data.arff");
-        Instances data = new Instances(datafile);
-
-
-        kmeans.buildClusterer(data);
-
-        // This array returns the cluster number (starting with 0) for each instance
-        // The array has as many elements as the number of instances
-        int[] assignments = kmeans.getAssignments();
-
-        int i=0;
-        for(int clusterNum : assignments) {
-            System.out.printf("Instance %d -> Cluster %d \n", i, clusterNum);
-            i++;
-        } */
+        Random random = new Random();
+        ControllerML controller = new ControllerML();
+        // INPUT SCORE KONTRAKTOR UNTUK SEMUA KRITERIA
+        for (int i=0;i<6;i++) {
+            oneRecordKriteria inputThisKontraktor = new oneRecordKriteria();
+            inputThisKontraktor.insertAdministrasiScore(random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1);
+            inputThisKontraktor.insertTeknisScore(random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1);
+            inputThisKontraktor.insertAnggaranScore(random.nextInt(10)+1,random.nextInt(10)+1,random.nextInt(10)+1);
+            controller.insertNewRecordContractor(inputThisKontraktor);
+        }
+        // KONFIG INSTANCE WEKA SEMUA KRITERIA
+        controller.configArffInstancesEachCriteria();
+        // SESUDAH DICONFIG DATA SKOR DILOAD KE INSTANCE WEKA (DATA TERISI DI SINI)
+        controller.loadArffFromRawRecords();
+        Enumeration enumInstanceAdm = controller.getListRecordsArffForAdministrasi().enumerateInstances();
+        while (enumInstanceAdm.hasMoreElements()) {
+            Instance instance = (Instance) enumInstanceAdm.nextElement();
+            System.out.println(instance);
+        }
+        Enumeration enumInstanceTek = controller.getListRecordsArffForTeknis().enumerateInstances();
+        while (enumInstanceTek.hasMoreElements()) {
+            Instance instance = (Instance) enumInstanceTek.nextElement();
+            System.out.println(instance);
+        }
+        Enumeration enumInstanceAng = controller.getListRecordsArffForAnggaran().enumerateInstances();
+        while (enumInstanceAng.hasMoreElements()) {
+            Instance instance = (Instance) enumInstanceAng.nextElement();
+            System.out.println(instance);
+        }
+        // BENTUK CLUSTER K-MEANS TIAP KRITERIA
+        controller.buildClusteringCriteria(0,1); // administrasi
+        controller.buildClusteringCriteria(1,1); // teknis
+        controller.buildClusteringCriteria(2,1); // anggaran
+        // OUTPUT CLUSTER RESULT
+        controller.outputClusterResult(0,1); // administrasi
+        System.out.println("=======================================================");
+        controller.outputClusterResult(1,1); // teknis
+        System.out.println("=======================================================");
+        controller.outputClusterResult(2,1); // anggaran
+        System.out.println("=======================================================");
     }
 }
