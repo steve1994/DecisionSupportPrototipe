@@ -15,7 +15,7 @@ import sample.state.staticVars;
 
 import java.io.IOException;
 
-public class pembukaController {
+public class layarPembukaController {
     public void handleFirstLayer(ActionEvent actionEvent) {
         Parent root = null;
         try {
