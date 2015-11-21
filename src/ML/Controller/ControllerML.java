@@ -271,7 +271,48 @@ public class ControllerML {
     }
 
     public void outputClusterResult(int indexCriteria, int clusteringType) {
-        
+        int[] assigmentThisCriteria = null;
+        switch (indexCriteria) {
+            case 0 :
+                if (clusteringType == 1) {
+                    try {
+                        assigmentThisCriteria = simpleClusteringAdministrasi.getAssignments();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                } else if (clusteringType == 2) {
+                    //assigmentThisCriteria = EMClusteringAdministrasi.g
+                }
+                break;
+            case 1 :
+                if (clusteringType == 1) {
+                    try {
+                        assigmentThisCriteria = simpleClusteringTeknis.getAssignments();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                } else if (clusteringType == 2) {
+
+                }
+                break;
+            case 2 :
+                if (clusteringType == 1) {
+                    try {
+                        assigmentThisCriteria = simpleClusteringAnggaran.getAssignments();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                } else if (clusteringType == 2) {
+
+                }
+                break;
+        }
+        int i=0;
+        System.out.println("CLUSTERING KONTRAKTOR BERDASARKAN KRITERIA " + (indexCriteria+1));
+        for(int clusterNum : assigmentThisCriteria) {
+            System.out.printf("Contractor %d -> Cluster %d \n", (i+1), clusterNum);
+            i++;
+        }
     }
 
     public static void main(String[] arg) {
