@@ -89,10 +89,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inputLabelAdministrasiController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="inputLabelAdministrasiController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/inputLabelAdministrasiController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48697916" vertical-offset="1326" max-vertical-offset="2397">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1326" max-vertical-offset="2397">
               <caret line="89" column="30" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -104,11 +104,49 @@
       <file leaf-file-name="inputLabelTeknisController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/inputLabelTeknisController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1690" max-vertical-offset="2125">
-              <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="501" max-vertical-offset="2125">
+              <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="input_label_teknis.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/input_label_teknis.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.8333333" vertical-offset="255" max-vertical-offset="1462">
+              <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inputLabelAnggaranController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/inputLabelAnggaranController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="824" max-vertical-offset="1360">
+              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="input_label_anggaran.fxml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/input_label_anggaran.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.38418078" vertical-offset="204" max-vertical-offset="1105">
+              <caret line="20" column="16" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -143,29 +181,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="782">
               <caret line="24" column="40" selection-start-line="16" selection-start-column="8" selection-end-line="24" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControllerML.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ML/Controller/ControllerML.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="8320" max-vertical-offset="8704">
-              <caret line="523" column="110" selection-start-line="523" selection-start-column="110" selection-end-line="523" selection-end-column="110" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#19073#19092#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="staticVars.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/staticVars.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="113" max-vertical-offset="527">
-              <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -221,8 +236,6 @@
         <option value="$PROJECT_DIR$/src/sample/input_label_administrasi.fxml" />
         <option value="$PROJECT_DIR$/src/sample/state/staticVars.java" />
         <option value="$PROJECT_DIR$/src/sample/modelConfigurationController.java" />
-        <option value="$PROJECT_DIR$/src/sample/input_label_teknis.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/input_label_anggaran.fxml" />
         <option value="$PROJECT_DIR$/src/sample/inputLabelAnggaranController.java" />
         <option value="$PROJECT_DIR$/src/sample/layar_hasil_clustering.fxml" />
         <option value="$PROJECT_DIR$/src/ML/Controller/ControllerML.java" />
@@ -232,6 +245,8 @@
         <option value="$PROJECT_DIR$/src/sample/layarSubkriteriaAHPController.java" />
         <option value="$PROJECT_DIR$/src/sample/layarKeteranganLabelClusteringController.java" />
         <option value="$PROJECT_DIR$/src/sample/inputLabelAdministrasiController.java" />
+        <option value="$PROJECT_DIR$/src/sample/input_label_teknis.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/input_label_anggaran.fxml" />
       </list>
     </option>
   </component>
@@ -904,12 +919,12 @@
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1447854677249" duration="1439000" />
-      <workItem from="1447913994902" duration="110191000" />
+      <workItem from="1447913994902" duration="110758000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112932000" />
+    <option name="totallyTimeSpent" value="113499000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1343,38 +1358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/input_label_teknis.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.666667" vertical-offset="955" max-vertical-offset="1377">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/input_label_anggaran.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="10.866667" vertical-offset="700" max-vertical-offset="1105">
-          <caret line="22" column="94" selection-start-line="22" selection-start-column="94" selection-end-line="22" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/inputLabelAnggaranController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="976" max-vertical-offset="1360">
-          <caret line="61" column="161" selection-start-line="61" selection-start-column="161" selection-end-line="61" selection-end-column="161" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/input_kontraktor.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -1429,16 +1412,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/inputLabelTeknisController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1690" max-vertical-offset="2125">
-          <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/layar_keterangan_label_clustering.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -1478,11 +1451,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/inputLabelAdministrasiController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48697916" vertical-offset="1326" max-vertical-offset="2397">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1326" max-vertical-offset="2397">
           <caret line="89" column="30" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/inputLabelTeknisController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="501" max-vertical-offset="2125">
+          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/input_label_teknis.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8333333" vertical-offset="255" max-vertical-offset="1462">
+          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/inputLabelAnggaranController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="824" max-vertical-offset="1360">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/input_label_anggaran.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38418078" vertical-offset="204" max-vertical-offset="1105">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
