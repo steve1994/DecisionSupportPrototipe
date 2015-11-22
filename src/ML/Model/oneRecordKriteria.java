@@ -9,11 +9,11 @@ public class oneRecordKriteria {
     /**
      * 8 Buah Kriteria terkait Administrasi
      */
-    private ArrayList<Integer> listScoringKriteriaAdministrasi;
+    private ArrayList<String> listScoringKriteriaAdministrasi;
     /**
      * 6 Buah Kriteria terkait Teknis
      */
-    private ArrayList<Integer> listScoringKriteriaTeknis;
+    private ArrayList<String> listScoringKriteriaTeknis;
     /**
      * 3 Buah Kriteria terkait Anggaran
      */
@@ -23,11 +23,11 @@ public class oneRecordKriteria {
      * GETTER DAN SETTER
      */
 
-    public ArrayList<Integer> getListScoringKriteriaAdministrasi() {
+    public ArrayList<String> getListScoringKriteriaAdministrasi() {
         return listScoringKriteriaAdministrasi;
     }
 
-    public void setListScoringKriteriaAdministrasi(ArrayList<Integer> listScoringKriteriaAdministrasi) {
+    public void setListScoringKriteriaAdministrasi(ArrayList<String> listScoringKriteriaAdministrasi) {
         this.listScoringKriteriaAdministrasi = listScoringKriteriaAdministrasi;
     }
 
@@ -39,11 +39,11 @@ public class oneRecordKriteria {
         this.listScoringKriteriaAnggaran = listScoringKriteriaAnggaran;
     }
 
-    public ArrayList<Integer> getListScoringKriteriaTeknis() {
+    public ArrayList<String> getListScoringKriteriaTeknis() {
         return listScoringKriteriaTeknis;
     }
 
-    public void setListScoringKriteriaTeknis(ArrayList<Integer> listScoringKriteriaTeknis) {
+    public void setListScoringKriteriaTeknis(ArrayList<String> listScoringKriteriaTeknis) {
         this.listScoringKriteriaTeknis = listScoringKriteriaTeknis;
     }
 
@@ -51,9 +51,9 @@ public class oneRecordKriteria {
      * Constructor 1 (default)
      */
     public oneRecordKriteria() {
-        listScoringKriteriaAdministrasi = new ArrayList<Integer>();
+        listScoringKriteriaAdministrasi = new ArrayList<String>();
         listScoringKriteriaAnggaran = new ArrayList<Integer>();
-        listScoringKriteriaTeknis = new ArrayList<Integer>();
+        listScoringKriteriaTeknis = new ArrayList<String>();
     }
 
     /**
@@ -62,7 +62,7 @@ public class oneRecordKriteria {
      * @param teknisKriteria
      * @param anggaranKriteria
      */
-    public oneRecordKriteria(ArrayList<Integer> administrasiKriteria, ArrayList<Integer> teknisKriteria, ArrayList<Integer> anggaranKriteria) {
+    public oneRecordKriteria(ArrayList<String> administrasiKriteria, ArrayList<String> teknisKriteria, ArrayList<Integer> anggaranKriteria) {
         listScoringKriteriaAdministrasi = administrasiKriteria;
         listScoringKriteriaTeknis = teknisKriteria;
         listScoringKriteriaAnggaran = anggaranKriteria;
@@ -81,7 +81,7 @@ public class oneRecordKriteria {
      * @param sub7
      * @param sub8
      */
-    public void insertAdministrasiScore(int sub1, int sub2, int sub3, int sub4, int sub5, int sub6, int sub7, int sub8) {
+    public void insertAdministrasiScore(String sub1, String sub2, String sub3, String sub4, String sub5, String sub6, String sub7, String sub8) {
         listScoringKriteriaAdministrasi.add(sub1);
         listScoringKriteriaAdministrasi.add(sub2);
         listScoringKriteriaAdministrasi.add(sub3);
@@ -101,7 +101,7 @@ public class oneRecordKriteria {
      * @param sub5
      * @param sub6
      */
-    public void insertTeknisScore(int sub1, int sub2, int sub3, int sub4, int sub5, int sub6) {
+    public void insertTeknisScore(String sub1, String sub2, String sub3, String sub4, String sub5, String sub6) {
         listScoringKriteriaTeknis.add(sub1);
         listScoringKriteriaTeknis.add(sub2);
         listScoringKriteriaTeknis.add(sub3);

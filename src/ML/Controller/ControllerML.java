@@ -87,14 +87,46 @@ public class ControllerML {
      */
     public void configArffInstancesEachCriteria() {
         // Subkriteria ADMINISTRASI
-        Attribute subKriteriaAdministrasi1 = new Attribute("adm1");
-        Attribute subKriteriaAdministrasi2 = new Attribute("adm2");
-        Attribute subKriteriaAdministrasi3 = new Attribute("adm3");
-        Attribute subKriteriaAdministrasi4 = new Attribute("adm4");
-        Attribute subKriteriaAdministrasi5 = new Attribute("adm5");
-        Attribute subKriteriaAdministrasi6 = new Attribute("adm6");
-        Attribute subKriteriaAdministrasi7 = new Attribute("adm7");
-        Attribute subKriteriaAdministrasi8 = new Attribute("adm8");
+        FastVector nominalSubkriteriaAdm1 = new FastVector();
+        nominalSubkriteriaAdm1.addElement("lengkap");
+        nominalSubkriteriaAdm1.addElement("tidak lengkap");
+        Attribute subKriteriaAdministrasi1 = new Attribute("adm1",nominalSubkriteriaAdm1);
+
+        FastVector nominalSubkriteriaAdm2 = new FastVector();
+        nominalSubkriteriaAdm2.addElement("masalah");
+        nominalSubkriteriaAdm2.addElement("tidak masalah");
+        Attribute subKriteriaAdministrasi2 = new Attribute("adm2",nominalSubkriteriaAdm2);
+
+        FastVector nominalSubkriteriaAdm3 = new FastVector();
+        nominalSubkriteriaAdm3.addElement("ada");
+        nominalSubkriteriaAdm3.addElement("tidak ada");
+        Attribute subKriteriaAdministrasi3 = new Attribute("adm3",nominalSubkriteriaAdm3);
+
+        FastVector nominalSubkriteriaAdm4 = new FastVector();
+        nominalSubkriteriaAdm4.addElement("stabil");
+        nominalSubkriteriaAdm4.addElement("tidak stabil");
+        Attribute subKriteriaAdministrasi4 = new Attribute("adm4",nominalSubkriteriaAdm4);
+
+        FastVector nominalSubkriteriaAdm5 = new FastVector();
+        nominalSubkriteriaAdm5.addElement("baik");
+        nominalSubkriteriaAdm5.addElement("buruk");
+        Attribute subKriteriaAdministrasi5 = new Attribute("adm5",nominalSubkriteriaAdm5);
+
+        FastVector nominalSubkriteriaAdm6 = new FastVector();
+        nominalSubkriteriaAdm6.addElement("relevan");
+        nominalSubkriteriaAdm6.addElement("tidak relevan");
+        Attribute subKriteriaAdministrasi6 = new Attribute("adm6",nominalSubkriteriaAdm6);
+
+        FastVector nominalSubkriteriaAdm7 = new FastVector();
+        nominalSubkriteriaAdm7.addElement("ada");
+        nominalSubkriteriaAdm7.addElement("tidak");
+        Attribute subKriteriaAdministrasi7 = new Attribute("adm7",nominalSubkriteriaAdm7);
+
+        FastVector nominalSubkriteriaAdm8 = new FastVector();
+        nominalSubkriteriaAdm8.addElement("ada");
+        nominalSubkriteriaAdm8.addElement("tidak");
+        Attribute subKriteriaAdministrasi8 = new Attribute("adm8",nominalSubkriteriaAdm8);
+
         FastVector attributesInstanceAdministrasi = new FastVector();
         attributesInstanceAdministrasi.addElement(subKriteriaAdministrasi1);
         attributesInstanceAdministrasi.addElement(subKriteriaAdministrasi2);
@@ -105,13 +137,39 @@ public class ControllerML {
         attributesInstanceAdministrasi.addElement(subKriteriaAdministrasi7);
         attributesInstanceAdministrasi.addElement(subKriteriaAdministrasi8);
         listRecordsArffForAdministrasi = new Instances("Administrasi Dataset",attributesInstanceAdministrasi,0);
+
         // Subkriteria TEKNIS
-        Attribute subKriteriaTeknis1 = new Attribute("tek1");
-        Attribute subKriteriaTeknis2 = new Attribute("tek2");
-        Attribute subKriteriaTeknis3 = new Attribute("tek3");
-        Attribute subKriteriaTeknis4 = new Attribute("tek4");
-        Attribute subKriteriaTeknis5 = new Attribute("tek5");
-        Attribute subKriteriaTeknis6 = new Attribute("tek6");
+        FastVector nominalSubkriteriaTek1 = new FastVector();
+        nominalSubkriteriaTek1.addElement("tinggi");
+        nominalSubkriteriaTek1.addElement("sedang");
+        nominalSubkriteriaTek1.addElement("kurang");
+        Attribute subKriteriaTeknis1 = new Attribute("tek1",nominalSubkriteriaTek1);
+
+        FastVector nominalSubkriteriaTek2 = new FastVector();
+        nominalSubkriteriaTek2.addElement("lengkap");
+        nominalSubkriteriaTek2.addElement("tidak lengkap");
+        Attribute subKriteriaTeknis2 = new Attribute("tek2",nominalSubkriteriaTek2);
+
+        FastVector nominalSubkriteriaTek3 = new FastVector();
+        nominalSubkriteriaTek3.addElement("lengkap");
+        nominalSubkriteriaTek3.addElement("tidak lengkap");
+        Attribute subKriteriaTeknis3 = new Attribute("tek3",nominalSubkriteriaTek3);
+
+        FastVector nominalSubkriteriaTek4 = new FastVector();
+        nominalSubkriteriaTek4.addElement("pengalaman");
+        nominalSubkriteriaTek4.addElement("tidak pengalaman");
+        Attribute subKriteriaTeknis4 = new Attribute("tek4",nominalSubkriteriaTek4);
+
+        FastVector nominalSubkriteriaTek5 = new FastVector();
+        nominalSubkriteriaTek5.addElement("borong");
+        nominalSubkriteriaTek5.addElement("tusi");
+        Attribute subKriteriaTeknis5 = new Attribute("tek5",nominalSubkriteriaTek5);
+
+        FastVector nominalSubkriteriaTek6 = new FastVector();
+        nominalSubkriteriaTek6.addElement("ada");
+        nominalSubkriteriaTek6.addElement("tidak ada");
+        Attribute subKriteriaTeknis6 = new Attribute("tek6",nominalSubkriteriaTek6);
+
         FastVector attributesInstanceTeknis = new FastVector();
         attributesInstanceTeknis.addElement(subKriteriaTeknis1);
         attributesInstanceTeknis.addElement(subKriteriaTeknis2);
@@ -120,6 +178,7 @@ public class ControllerML {
         attributesInstanceTeknis.addElement(subKriteriaTeknis5);
         attributesInstanceTeknis.addElement(subKriteriaTeknis6);
         listRecordsArffForTeknis = new Instances("Teknis Dataset",attributesInstanceTeknis,0);
+
         // Subkriteria ANGGARAN
         Attribute subKriteriaAnggaran1 = new Attribute("ang1");
         Attribute subKriteriaAnggaran2 = new Attribute("ang2");
@@ -138,18 +197,18 @@ public class ControllerML {
     public void loadArffFromRawRecords() {
         for (oneRecordKriteria criteria : listRawRecordsContractor) {
             // ADMINISTRASI
-            ArrayList<Integer> listAttributesAdministrasiScore = criteria.getListScoringKriteriaAdministrasi();
+            ArrayList<String> listAttributesAdministrasiScore = criteria.getListScoringKriteriaAdministrasi();
             double[] valuesAdministrasi = new double[listRecordsArffForAdministrasi.numAttributes()];
             for (int i=0;i<valuesAdministrasi.length;i++) {
-                valuesAdministrasi[i] = listAttributesAdministrasiScore.get(i);
+                valuesAdministrasi[i] = listRecordsArffForAdministrasi.attribute(i).indexOfValue(listAttributesAdministrasiScore.get(i));
             }
             Instance administrasi = new Instance(1.0,valuesAdministrasi);
             listRecordsArffForAdministrasi.add(administrasi);
             // TEKNIS
-            ArrayList<Integer> listAttributesTeknisScore = criteria.getListScoringKriteriaTeknis();
+            ArrayList<String> listAttributesTeknisScore = criteria.getListScoringKriteriaTeknis();
             double[] valuesTeknis = new double[listRecordsArffForTeknis.numAttributes()];
             for (int i=0;i<valuesTeknis.length;i++) {
-                valuesTeknis[i] = listAttributesTeknisScore.get(i);
+                valuesTeknis[i] = listRecordsArffForTeknis.attribute(i).indexOfValue(listAttributesTeknisScore.get(i));
             }
             Instance teknis = new Instance(1.0,valuesTeknis);
             listRecordsArffForTeknis.add(teknis);
@@ -395,14 +454,57 @@ public class ControllerML {
     public static void main(String[] arg) {
         Random random = new Random();
         ControllerML controller = new ControllerML();
+
         // INPUT SCORE KONTRAKTOR UNTUK SEMUA KRITERIA
-        for (int i=0;i<6;i++) {
+      /*  for (int i=0;i<6;i++) {
             oneRecordKriteria inputThisKontraktor = new oneRecordKriteria();
             inputThisKontraktor.insertAdministrasiScore(random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1);
             inputThisKontraktor.insertTeknisScore(random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1, random.nextInt(10) + 1);
             inputThisKontraktor.insertAnggaranScore(random.nextInt(10)+1,random.nextInt(10)+1,random.nextInt(10)+1);
             controller.insertNewRecordContractor(inputThisKontraktor);
+        } */
+        ArrayList<oneRecordKriteria> listRecordContractor = new ArrayList<oneRecordKriteria>();
+        // Kontraktor 1
+        oneRecordKriteria kontraktor1 = new oneRecordKriteria();
+        kontraktor1.insertAdministrasiScore("lengkap","tidak masalah","tidak ada","stabil","baik","tidak relevan","ada","tidak");
+        kontraktor1.insertTeknisScore("sedang", "lengkap", "lengkap", "pengalaman", "tusi", "tidak ada");
+        kontraktor1.insertAnggaranScore(random.nextInt(20000)+1,random.nextInt(20000)+1,random.nextInt(20000)+1);
+        listRecordContractor.add(kontraktor1);
+        // Kontraktor 2
+        oneRecordKriteria kontraktor2 = new oneRecordKriteria();
+        kontraktor2.insertAdministrasiScore("lengkap","tidak masalah","tidak ada","stabil","baik","tidak relevan","ada","tidak");
+        kontraktor2.insertTeknisScore("sedang","lengkap","lengkap","pengalaman","tusi","tidak ada");
+        kontraktor2.insertAnggaranScore(random.nextInt(20000)+1,random.nextInt(20000)+1,random.nextInt(20000)+1);
+        listRecordContractor.add(kontraktor2);
+        // Kontraktor 3
+        oneRecordKriteria kontraktor3 = new oneRecordKriteria();
+        kontraktor3.insertAdministrasiScore("lengkap","tidak masalah","tidak ada","stabil","baik","tidak relevan","ada","tidak");
+        kontraktor3.insertTeknisScore("sedang","lengkap","lengkap","pengalaman","tusi","tidak ada");
+        kontraktor3.insertAnggaranScore(random.nextInt(20000)+1,random.nextInt(20000)+1,random.nextInt(20000)+1);
+        listRecordContractor.add(kontraktor3);
+        // Kontraktor 4
+        oneRecordKriteria kontraktor4 = new oneRecordKriteria();
+        kontraktor4.insertAdministrasiScore("lengkap","tidak masalah","tidak ada","stabil","baik","tidak relevan","ada","tidak");
+        kontraktor4.insertTeknisScore("sedang","lengkap","lengkap","pengalaman","tusi","tidak ada");
+        kontraktor4.insertAnggaranScore(random.nextInt(20000)+1,random.nextInt(20000)+1,random.nextInt(20000)+1);
+        listRecordContractor.add(kontraktor4);
+        // Kontraktor 5
+        oneRecordKriteria kontraktor5 = new oneRecordKriteria();
+        kontraktor5.insertAdministrasiScore("lengkap","tidak masalah","tidak ada","stabil","baik","tidak relevan","ada","tidak");
+        kontraktor5.insertTeknisScore("sedang","lengkap","lengkap","pengalaman","tusi","tidak ada");
+        kontraktor5.insertAnggaranScore(random.nextInt(20000)+1,random.nextInt(20000)+1,random.nextInt(20000)+1);
+        listRecordContractor.add(kontraktor5);
+        // Kontraktor 6
+        oneRecordKriteria kontraktor6 = new oneRecordKriteria();
+        kontraktor6.insertAdministrasiScore("lengkap","tidak masalah","tidak ada","stabil","baik","tidak relevan","ada","tidak");
+        kontraktor6.insertTeknisScore("sedang","lengkap","lengkap","pengalaman","tusi","tidak ada");
+        kontraktor6.insertAnggaranScore(random.nextInt(20000)+1,random.nextInt(20000)+1,random.nextInt(20000)+1);
+        listRecordContractor.add(kontraktor6);
+
+        for (oneRecordKriteria criteria : listRecordContractor) {
+            controller.insertNewRecordContractor(criteria);
         }
+
         // KONFIG INSTANCE WEKA SEMUA KRITERIA
         controller.configArffInstancesEachCriteria();
         // SESUDAH DICONFIG DATA SKOR DILOAD KE INSTANCE WEKA (DATA TERISI DI SINI)
