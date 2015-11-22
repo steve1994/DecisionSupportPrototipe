@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="306.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.layarHasilAHPController">
+   <children>
+      <Button layoutX="241.0" layoutY="262.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="25.0" prefWidth="125.0" text="KEMBALI" />
+      <Label layoutX="59.0" layoutY="71.0" text="KRITERIA ADMINISTRASI" />
+      <Label layoutX="259.0" layoutY="71.0" text="KRITERIA TEKNIS" />
+      <Label layoutX="441.0" layoutY="71.0" text="KRITERIA ANGGARAN" />
+      <Label layoutX="173.0" layoutY="25.0" text="RANKING KONTRAKTOR TIAP KRITERIA">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="98.0" text="1." />
+      <Label layoutX="26.0" layoutY="123.0" text="2." />
+      <Label layoutX="26.0" layoutY="148.0" text="3." />
+      <Label layoutX="26.0" layoutY="223.0" text="6." />
+      <Label layoutX="26.0" layoutY="198.0" text="5." />
+      <Label layoutX="26.0" layoutY="173.0" text="4." />
+      <Label layoutX="213.0" layoutY="172.0" text="4." />
+      <Label layoutX="213.0" layoutY="197.0" text="5." />
+      <Label layoutX="213.0" layoutY="222.0" text="6." />
+      <Label layoutX="213.0" layoutY="147.0" text="3." />
+      <Label layoutX="213.0" layoutY="122.0" text="2." />
+      <Label layoutX="213.0" layoutY="97.0" text="1." />
+      <Label layoutX="403.0" layoutY="171.0" text="4." />
+      <Label layoutX="403.0" layoutY="196.0" text="5." />
+      <Label layoutX="403.0" layoutY="221.0" text="6." />
+      <Label layoutX="403.0" layoutY="146.0" text="3." />
+      <Label layoutX="403.0" layoutY="121.0" text="2." />
+      <Label layoutX="403.0" layoutY="96.0" text="1." />
+      <Label id="ranking1Administrasi" layoutX="48.0" layoutY="98.0" prefHeight="17.0" prefWidth="142.0" text="Label" />
+      <Label id="ranking2Administrasi" layoutX="48.0" layoutY="123.0" prefHeight="17.0" prefWidth="142.0" text="Label" />
+      <Label id="ranking3Administrasi" layoutX="48.0" layoutY="148.0" prefHeight="17.0" prefWidth="142.0" text="Label" />
+      <Label id="ranking4Administrasi" layoutX="48.0" layoutY="173.0" prefHeight="17.0" prefWidth="142.0" text="Label" />
+      <Label id="ranking5Administrasi" layoutX="48.0" layoutY="198.0" prefHeight="17.0" prefWidth="142.0" text="Label" />
+      <Label id="ranking6Administrasi" layoutX="48.0" layoutY="222.0" prefHeight="17.0" prefWidth="142.0" text="Label" />
+      <Label id="ranking1Teknis" layoutX="242.0" layoutY="98.0" prefHeight="17.0" prefWidth="142.0" text="Label" />
+      <Label id="ranking2Teknis" layoutX="242.0" layoutY="123.0" prefHeight="17.0" prefWidth="142.0" text="Label" />
+      <Label id="ranking3Teknis" layoutX="242.0" layoutY="148.0" prefHeight="17.0" prefWidth="142.0" text="Label" />
+      <Label id="ranking4Teknis" layoutX="242.0" layoutY="173.0" prefHeight="17.0" prefWidth="142.0" text="Label" />
+      <Label id="ranking5Teknis" layoutX="242.0" layoutY="198.0" prefHeight="17.0" prefWidth="142.0" text="Label" />
+      <Label id="ranking6Teknis" layoutX="242.0" layoutY="223.0" prefHeight="17.0" prefWidth="142.0" text="Label" />
+      <Label id="ranking1Anggaran" layoutX="428.0" layoutY="97.0" prefHeight="17.0" prefWidth="142.0" text="Label" />
+      <Label id="ranking2Anggaran" layoutX="428.0" layoutY="121.0" prefHeight="17.0" prefWidth="142.0" text="Label" />
+      <Label id="ranking3Anggaran" layoutX="428.0" layoutY="147.0" prefHeight="17.0" prefWidth="142.0" text="Label" />
+      <Label id="ranking4Anggaran" layoutX="428.0" layoutY="172.0" prefHeight="17.0" prefWidth="142.0" text="Label" />
+      <Label id="ranking5Anggaran" layoutX="428.0" layoutY="196.0" prefHeight="17.0" prefWidth="142.0" text="Label" />
+      <Label id="ranking6Anggaran" layoutX="428.0" layoutY="222.0" prefHeight="17.0" prefWidth="142.0" text="Label" />
+   </children>
+</AnchorPane>
