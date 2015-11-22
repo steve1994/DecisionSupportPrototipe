@@ -15,6 +15,13 @@ import java.io.IOException;
  * Created by steve on 22/11/2015.
  */
 public class inputLabelTeknisController {
+    // Label per subkriteria
+    final String[] labelSubkriteria1 = new String[] {"tinggi","sedang","kurang"};
+    final String[] labelSubkriteria2 = new String[] {"lengkap","tidak lengkap"};
+    final String[] labelSubkriteria3 = new String[] {"lengkap","tidak lengkap"};
+    final String[] labelSubkriteria4 = new String[] {"pengalaman","tidak pengalaman"};
+    final String[] labelSubkriteria5 = new String[] {"borong","tusi"};
+    final String[] labelSubkriteria6 = new String[] {"ada","tidak ada"};
     // Kontraktor 1
     @FXML private TextField teknis11 = new TextField();
     @FXML private TextField teknis12 = new TextField();
@@ -72,12 +79,12 @@ public class inputLabelTeknisController {
 
     public void handleNextButton(ActionEvent actionEvent) {
         // Simpan record terkait teknis
-        staticVars.recordKontraktor1.insertTeknisScore(teknis11.getText(),teknis12.getText(),teknis13.getText(),teknis14.getText(),teknis15.getText(),teknis16.getText());
-        staticVars.recordKontraktor2.insertTeknisScore(teknis21.getText(),teknis22.getText(),teknis23.getText(),teknis24.getText(),teknis25.getText(),teknis26.getText());
-        staticVars.recordKontraktor3.insertTeknisScore(teknis31.getText(),teknis32.getText(),teknis33.getText(),teknis34.getText(),teknis35.getText(),teknis36.getText());
-        staticVars.recordKontraktor4.insertTeknisScore(teknis41.getText(),teknis42.getText(),teknis43.getText(),teknis44.getText(),teknis45.getText(),teknis46.getText());
-        staticVars.recordKontraktor5.insertTeknisScore(teknis51.getText(),teknis52.getText(),teknis53.getText(),teknis54.getText(),teknis55.getText(),teknis56.getText());
-        staticVars.recordKontraktor6.insertTeknisScore(teknis61.getText(),teknis62.getText(),teknis63.getText(),teknis64.getText(),teknis65.getText(),teknis66.getText());
+        staticVars.recordKontraktor1.insertTeknisScore(convertInputToLabel(teknis11.getText(),1),convertInputToLabel(teknis12.getText(),2),convertInputToLabel(teknis13.getText(),3),convertInputToLabel(teknis14.getText(),4),convertInputToLabel(teknis15.getText(),5),convertInputToLabel(teknis16.getText(),6));
+        staticVars.recordKontraktor2.insertTeknisScore(convertInputToLabel(teknis21.getText(),1),convertInputToLabel(teknis22.getText(),2),convertInputToLabel(teknis23.getText(),3),convertInputToLabel(teknis24.getText(),4),convertInputToLabel(teknis25.getText(),5),convertInputToLabel(teknis26.getText(),6));
+        staticVars.recordKontraktor3.insertTeknisScore(convertInputToLabel(teknis31.getText(),1),convertInputToLabel(teknis32.getText(),2),convertInputToLabel(teknis33.getText(),3),convertInputToLabel(teknis34.getText(),4),convertInputToLabel(teknis35.getText(),5),convertInputToLabel(teknis36.getText(),6));
+        staticVars.recordKontraktor4.insertTeknisScore(convertInputToLabel(teknis41.getText(),1),convertInputToLabel(teknis42.getText(),2),convertInputToLabel(teknis43.getText(),3),convertInputToLabel(teknis44.getText(),4),convertInputToLabel(teknis45.getText(),5),convertInputToLabel(teknis46.getText(),6));
+        staticVars.recordKontraktor5.insertTeknisScore(convertInputToLabel(teknis51.getText(),1),convertInputToLabel(teknis52.getText(),2),convertInputToLabel(teknis53.getText(),3),convertInputToLabel(teknis54.getText(),4),convertInputToLabel(teknis55.getText(),5),convertInputToLabel(teknis56.getText(),6));
+        staticVars.recordKontraktor6.insertTeknisScore(convertInputToLabel(teknis61.getText(),1),convertInputToLabel(teknis62.getText(),2),convertInputToLabel(teknis63.getText(),3),convertInputToLabel(teknis64.getText(),4),convertInputToLabel(teknis65.getText(),5),convertInputToLabel(teknis66.getText(),6));
         // Pindah layar
         Parent root = null;
         try {
@@ -88,5 +95,25 @@ public class inputLabelTeknisController {
         Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         staticVars.currentStage = stage;
+    }
+
+    /**
+     * Mengolah input dari textfield ke bentuk string label
+     * @param indexLabelSubkriteria : 1-n (tergantung banyak label)
+     * @param indexSubkriteria : 1-6 (untuk teknis)
+     * @return
+     */
+    private String convertInputToLabel(String indexLabelSubkriteria, int indexSubkriteria) {
+        int labelSubkriteria = Integer.parseInt(indexLabelSubkriteria) - 1;
+        String label = null;
+        switch (indexSubkriteria) {
+            case 1 : label = labelSubkriteria1[labelSubkriteria]; break;
+            case 2 : label = labelSubkriteria2[labelSubkriteria]; break;
+            case 3 : label = labelSubkriteria3[labelSubkriteria]; break;
+            case 4 : label = labelSubkriteria4[labelSubkriteria]; break;
+            case 5 : label = labelSubkriteria5[labelSubkriteria]; break;
+            case 6 : label = labelSubkriteria6[labelSubkriteria]; break;
+        }
+        return label;
     }
 }

@@ -15,6 +15,15 @@ import java.io.IOException;
  * Created by steve on 22/11/2015.
  */
 public class inputLabelAdministrasiController {
+    // Label per subkriteria
+    final String[] labelSubkriteria1 = new String[] {"lengkap","tidak lengkap"};
+    final String[] labelSubkriteria2 = new String[] {"tidak masalah","masalah"};
+    final String[] labelSubkriteria3 = new String[] {"ada","tidak ada"};
+    final String[] labelSubkriteria4 = new String[] {"stabil","tidak stabil"};
+    final String[] labelSubkriteria5 = new String[] {"baik","buruk"};
+    final String[] labelSubkriteria6 = new String[] {"relevan","tidak relevan"};
+    final String[] labelSubkriteria7 = new String[] {"ada","tidak"};
+    final String[] labelSubkriteria8 = new String[] {"ada","tidak"};
     // Kontraktor 1
     @FXML private TextField administrasi11 = new TextField();
     @FXML private TextField administrasi12 = new TextField();
@@ -73,7 +82,7 @@ public class inputLabelAdministrasiController {
     public void handleBackButton(ActionEvent actionEvent) {
         Parent root = null;
         try {
-            root = FXMLLoader.load(getClass().getResource("layar_subkriteria_ahp.fxml"));
+            root = FXMLLoader.load(getClass().getResource("layar_keterangan_label_clustering.fxml"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -84,12 +93,12 @@ public class inputLabelAdministrasiController {
 
     public void handleNextButton(ActionEvent actionEvent) {
         // Simpan record terkait administrasi
-        staticVars.recordKontraktor1.insertAdministrasiScore(administrasi11.getText(),administrasi12.getText(),administrasi13.getText(),administrasi14.getText(),administrasi15.getText(),administrasi16.getText(),administrasi17.getText(),administrasi18.getText());
-        staticVars.recordKontraktor2.insertAdministrasiScore(administrasi21.getText(),administrasi22.getText(),administrasi23.getText(),administrasi24.getText(),administrasi25.getText(),administrasi26.getText(),administrasi27.getText(),administrasi28.getText());
-        staticVars.recordKontraktor3.insertAdministrasiScore(administrasi31.getText(),administrasi32.getText(),administrasi33.getText(),administrasi34.getText(),administrasi35.getText(),administrasi36.getText(),administrasi37.getText(),administrasi38.getText());
-        staticVars.recordKontraktor4.insertAdministrasiScore(administrasi41.getText(),administrasi42.getText(),administrasi43.getText(),administrasi44.getText(),administrasi45.getText(),administrasi46.getText(),administrasi47.getText(),administrasi48.getText());
-        staticVars.recordKontraktor5.insertAdministrasiScore(administrasi51.getText(),administrasi52.getText(),administrasi53.getText(),administrasi54.getText(),administrasi55.getText(),administrasi56.getText(),administrasi57.getText(),administrasi58.getText());
-        staticVars.recordKontraktor6.insertAdministrasiScore(administrasi61.getText(),administrasi62.getText(),administrasi63.getText(),administrasi64.getText(),administrasi65.getText(),administrasi66.getText(),administrasi67.getText(),administrasi68.getText());
+        staticVars.recordKontraktor1.insertAdministrasiScore(convertInputToLabel(administrasi11.getText(),1),convertInputToLabel(administrasi12.getText(),2),convertInputToLabel(administrasi13.getText(),3),convertInputToLabel(administrasi14.getText(),4),convertInputToLabel(administrasi15.getText(),5),convertInputToLabel(administrasi16.getText(),6),convertInputToLabel(administrasi17.getText(),7),convertInputToLabel(administrasi18.getText(),8));
+        staticVars.recordKontraktor2.insertAdministrasiScore(convertInputToLabel(administrasi21.getText(),1),convertInputToLabel(administrasi22.getText(),2),convertInputToLabel(administrasi23.getText(),3),convertInputToLabel(administrasi24.getText(),4),convertInputToLabel(administrasi25.getText(),5),convertInputToLabel(administrasi26.getText(),6),convertInputToLabel(administrasi27.getText(),7),convertInputToLabel(administrasi28.getText(),8));
+        staticVars.recordKontraktor3.insertAdministrasiScore(convertInputToLabel(administrasi31.getText(),1),convertInputToLabel(administrasi32.getText(),2),convertInputToLabel(administrasi33.getText(),3),convertInputToLabel(administrasi34.getText(),4),convertInputToLabel(administrasi35.getText(),5),convertInputToLabel(administrasi36.getText(),6),convertInputToLabel(administrasi37.getText(),7),convertInputToLabel(administrasi38.getText(),8));
+        staticVars.recordKontraktor4.insertAdministrasiScore(convertInputToLabel(administrasi41.getText(),1),convertInputToLabel(administrasi42.getText(),2),convertInputToLabel(administrasi43.getText(),3),convertInputToLabel(administrasi44.getText(),4),convertInputToLabel(administrasi45.getText(),5),convertInputToLabel(administrasi46.getText(),6),convertInputToLabel(administrasi47.getText(),7),convertInputToLabel(administrasi48.getText(),8));
+        staticVars.recordKontraktor5.insertAdministrasiScore(convertInputToLabel(administrasi51.getText(),1),convertInputToLabel(administrasi52.getText(),2),convertInputToLabel(administrasi53.getText(),3),convertInputToLabel(administrasi54.getText(),4),convertInputToLabel(administrasi55.getText(),5),convertInputToLabel(administrasi56.getText(),6),convertInputToLabel(administrasi57.getText(),7),convertInputToLabel(administrasi58.getText(),8));
+        staticVars.recordKontraktor6.insertAdministrasiScore(convertInputToLabel(administrasi61.getText(),1),convertInputToLabel(administrasi62.getText(),2),convertInputToLabel(administrasi63.getText(),3),convertInputToLabel(administrasi64.getText(),4),convertInputToLabel(administrasi65.getText(),5),convertInputToLabel(administrasi66.getText(),6),convertInputToLabel(administrasi67.getText(),7),convertInputToLabel(administrasi68.getText(),8));
         // Pindah layar
         Parent root = null;
         try {
@@ -100,5 +109,27 @@ public class inputLabelAdministrasiController {
         Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         staticVars.currentStage = stage;
+    }
+
+    /**
+     * Mengolah input dari textfield ke bentuk string label
+     * @param indexLabelSubkriteria : 1-n (tergantung banyak label)
+     * @param indexSubkriteria : 1-8 (untuk administrasi)
+     * @return
+     */
+    private String convertInputToLabel(String indexLabelSubkriteria, int indexSubkriteria) {
+        int labelSubkriteria = Integer.parseInt(indexLabelSubkriteria) - 1;
+        String label = null;
+        switch (indexSubkriteria) {
+            case 1 : label = labelSubkriteria1[labelSubkriteria]; break;
+            case 2 : label = labelSubkriteria2[labelSubkriteria]; break;
+            case 3 : label = labelSubkriteria3[labelSubkriteria]; break;
+            case 4 : label = labelSubkriteria4[labelSubkriteria]; break;
+            case 5 : label = labelSubkriteria5[labelSubkriteria]; break;
+            case 6 : label = labelSubkriteria6[labelSubkriteria]; break;
+            case 7 : label = labelSubkriteria7[labelSubkriteria]; break;
+            case 8 : label = labelSubkriteria8[labelSubkriteria]; break;
+        }
+        return label;
     }
 }

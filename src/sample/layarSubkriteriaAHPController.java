@@ -35,7 +35,7 @@ public class layarSubkriteriaAHPController {
             }
         } else if (staticVars.modelModeSelected == 2) { // Clustering
             try {
-                root = FXMLLoader.load(getClass().getResource("input_label_administrasi.fxml"));
+                root = FXMLLoader.load(getClass().getResource("layar_keterangan_label_clustering.fxml"));
             } catch (IOException e) {
                 e.printStackTrace();
             }

@@ -77,14 +77,73 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layarHasilClusteringController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="layarHasilClusteringController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/layarHasilClusteringController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.4348958" vertical-offset="0" max-vertical-offset="1088">
+            <state vertical-scroll-proportion="0.0" vertical-offset="449" max-vertical-offset="1088">
               <caret line="55" column="50" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inputLabelAdministrasiController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/inputLabelAdministrasiController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.48697916" vertical-offset="1326" max-vertical-offset="2397">
+              <caret line="89" column="30" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inputLabelTeknisController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/inputLabelTeknisController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1690" max-vertical-offset="2125">
+              <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layar_keterangan_label_clustering.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/layar_keterangan_label_clustering.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.9333334" vertical-offset="0" max-vertical-offset="459">
+              <caret line="14" column="89" selection-start-line="14" selection-start-column="89" selection-end-line="14" selection-end-column="89" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layarKeteranganLabelClusteringController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/layarKeteranganLabelClusteringController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="765">
+              <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layarSubkriteriaAHPController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/layarSubkriteriaAHPController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="782">
+              <caret line="24" column="40" selection-start-line="16" selection-start-column="8" selection-end-line="24" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -122,8 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/AHP/Controller.java" />
-        <option value="$PROJECT_DIR$/src/AHP/ControllerAdministrasi.java" />
         <option value="$PROJECT_DIR$/src/AHP/ControllerAnggaran.java" />
         <option value="$PROJECT_DIR$/src/AHP/ControllerTeknis.java" />
         <option value="$PROJECT_DIR$/src/model/PairwiseComparisonElement.java" />
@@ -164,15 +221,17 @@
         <option value="$PROJECT_DIR$/src/sample/input_label_administrasi.fxml" />
         <option value="$PROJECT_DIR$/src/sample/state/staticVars.java" />
         <option value="$PROJECT_DIR$/src/sample/modelConfigurationController.java" />
-        <option value="$PROJECT_DIR$/src/sample/layarSubkriteriaAHPController.java" />
-        <option value="$PROJECT_DIR$/src/sample/inputLabelAdministrasiController.java" />
         <option value="$PROJECT_DIR$/src/sample/input_label_teknis.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/inputLabelTeknisController.java" />
         <option value="$PROJECT_DIR$/src/sample/input_label_anggaran.fxml" />
         <option value="$PROJECT_DIR$/src/sample/inputLabelAnggaranController.java" />
         <option value="$PROJECT_DIR$/src/sample/layar_hasil_clustering.fxml" />
         <option value="$PROJECT_DIR$/src/ML/Controller/ControllerML.java" />
         <option value="$PROJECT_DIR$/src/sample/layarHasilClusteringController.java" />
+        <option value="$PROJECT_DIR$/src/sample/inputLabelTeknisController.java" />
+        <option value="$PROJECT_DIR$/src/sample/layar_keterangan_label_clustering.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/layarSubkriteriaAHPController.java" />
+        <option value="$PROJECT_DIR$/src/sample/layarKeteranganLabelClusteringController.java" />
+        <option value="$PROJECT_DIR$/src/sample/inputLabelAdministrasiController.java" />
       </list>
     </option>
   </component>
@@ -477,7 +536,7 @@
       <recent name="ML.Controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ControllerML">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="MatrixOperation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -845,12 +904,12 @@
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1447854677249" duration="1439000" />
-      <workItem from="1447913994902" duration="106555000" />
+      <workItem from="1447913994902" duration="110191000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109296000" />
+    <option name="totallyTimeSpent" value="112932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1273,22 +1332,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/modelConfigurationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="680">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/layarSubkriteriaAHPController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="782">
-          <caret line="25" column="40" selection-start-line="17" selection-start-column="8" selection-end-line="25" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/input_label_administrasi.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -1311,16 +1354,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/inputLabelAdministrasiController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1384" max-vertical-offset="1870">
-          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/input_label_anggaran.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -1329,16 +1362,6 @@
         <state vertical-scroll-proportion="10.866667" vertical-offset="700" max-vertical-offset="1105">
           <caret line="22" column="94" selection-start-line="22" selection-start-column="94" selection-end-line="22" selection-end-column="94" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/inputLabelTeknisController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1180" max-vertical-offset="1666">
-          <caret line="68" column="36" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1398,8 +1421,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/layarHasilClusteringController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.4348958" vertical-offset="0" max-vertical-offset="1088">
+        <state vertical-scroll-proportion="0.0" vertical-offset="449" max-vertical-offset="1088">
           <caret line="55" column="50" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/inputLabelTeknisController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1690" max-vertical-offset="2125">
+          <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/layar_keterangan_label_clustering.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.9333334" vertical-offset="0" max-vertical-offset="459">
+          <caret line="14" column="89" selection-start-line="14" selection-start-column="89" selection-end-line="14" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/modelConfigurationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5138539" vertical-offset="51" max-vertical-offset="680">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/layarSubkriteriaAHPController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="782">
+          <caret line="24" column="40" selection-start-line="16" selection-start-column="8" selection-end-line="24" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/layarKeteranganLabelClusteringController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="765">
+          <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/inputLabelAdministrasiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48697916" vertical-offset="1326" max-vertical-offset="2397">
+          <caret line="89" column="30" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
