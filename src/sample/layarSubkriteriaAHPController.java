@@ -11,13 +11,13 @@ import sample.state.staticVars;
 import java.io.IOException;
 
 /**
- * Created by steve on 21/11/2015.
+ * Created by steve on 22/11/2015.
  */
-public class modelConfigurationController {
-    public void handleClusteringModel(ActionEvent actionEvent) {
+public class layarSubkriteriaAHPController {
+    public void handleBackButton(ActionEvent actionEvent) {
         Parent root = null;
         try {
-            root = FXMLLoader.load(getClass().getResource("layar_clustering_form.fxml"));
+            root = FXMLLoader.load(getClass().getResource("model_configuration.fxml"));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -26,10 +26,10 @@ public class modelConfigurationController {
         staticVars.currentStage = stage;
     }
 
-    public void handleAHPModel(ActionEvent actionEvent) {
+    public void handleNextButton(ActionEvent actionEvent) {
         Parent root = null;
         try {
-            root = FXMLLoader.load(getClass().getResource("layar_subkriteria_ahp.fxml"));
+            root = FXMLLoader.load(getClass().getResource("input_matriks_berpasangan.fxml"));
         } catch (IOException e) {
             e.printStackTrace();
         }

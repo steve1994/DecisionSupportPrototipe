@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="334.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.layarSubkriteriaAHPController">
+   <children>
+      <Button onAction="#handleNextButton" layoutX="357.0" layoutY="272.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="LANJUT" />
+      <Button onAction="#handleBackButton" layoutX="116.0" layoutY="272.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="KEMBALI" />
+      <TextArea layoutX="20.0" layoutY="70.0" prefHeight="173.0" prefWidth="172.0" text="1 : Kelengkapan Data Administrasi&#10;2 : Status Perpajakan.&#10;3 : Struktur Organisasi Perusahaan&#10;4 : Stabilitas Finansial&#10;5 : Reputasi Perusahaan&#10;6 : Pekerjaan Yang Sedang Dilaksanakan&#10;7 : Jaminan Bank&#10;8 : Sertifikat Keahlian dan Sertifikat Bidang Usaha." />
+      <Label layoutX="20.0" layoutY="36.0" text="KRITERIA ADMINISTRASI" />
+      <TextArea layoutX="214.0" layoutY="70.0" prefHeight="173.0" prefWidth="172.0" text="1 : Kemampuan Dasar&#10;2 : Data Peralatan/Perlengkapan.&#10;3 : Data Personil Teknik&#10;4 : Pengalaman Perusahaan / Perorangan.&#10;5 : Metodologi Pekerjaan.&#10;6 : Sertifikat Manajemen Mutu&#10;" />
+      <TextArea layoutX="407.0" layoutY="70.0" prefHeight="173.0" prefWidth="172.0" text="1 : Total Harga Penawaran&#10;2 : Sisa Kemampuan Keuangan.&#10;3 : Saldo Rekening" />
+      <Label layoutX="214.0" layoutY="36.0" text="KRITERIA TEKNIS" />
+      <Label layoutX="407.0" layoutY="36.0" text="KRITERIA ANGGARAN" />
+   </children>
+</AnchorPane>
