@@ -16,13 +16,10 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import model.InputPairWiseComparison;
-import sample.state.staticVars;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.ResourceBundle;
 
 /**

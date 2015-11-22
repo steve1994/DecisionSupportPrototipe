@@ -1,6 +1,5 @@
 package sample;
 
-import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,7 +10,6 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import model.Contractor;
 import model.ListContractor;
-import sample.state.staticVars;
 
 import java.io.IOException;
 

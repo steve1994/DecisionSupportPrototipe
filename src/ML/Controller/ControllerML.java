@@ -412,7 +412,7 @@ public class ControllerML {
      * Build K means cluster dan output clustering result K-means
      * @param instances
      */
-    public void outputKmeansClusteringResult(Instances instances) {
+    public String outputKmeansClusteringResult(Instances instances) {
         SimpleKMeans kmeans = new SimpleKMeans();
 
         kmeans.setSeed(5);
@@ -444,11 +444,17 @@ public class ControllerML {
             e.printStackTrace();
         }
 
+        StringBuilder summaryString = new StringBuilder();
         int i=0;
         for(int clusterNum : assignments) {
-            System.out.printf("Contractor %d -> Cluster %d \n", (i+1), clusterNum);
+            summaryString.append("Contractor ");
+            summaryString.append(i+1);
+            summaryString.append(" -> Cluster ");
+            summaryString.append(clusterNum);
+            summaryString.append("\n");
             i++;
         }
+        return summaryString.toString();
     }
 
     public static void main(String[] arg) {
@@ -511,10 +517,10 @@ public class ControllerML {
         controller.loadArffFromRawRecords();
         // BENTUK CLUSTER K-MEANS TIAP KRITERIA, KELUARKAN HASIL
         System.out.println("HASIL CLUSTERING KONTRAKTOR UNTUK KRITERIA ADMINISTRASI : ");
-        controller.outputKmeansClusteringResult(controller.getListRecordsArffForAdministrasi());
+        System.out.println(controller.outputKmeansClusteringResult(controller.getListRecordsArffForAdministrasi()));
         System.out.println("HASIL CLUSTERING KONTRAKTOR UNTUK KRITERIA TEKNIS : ");
-        controller.outputKmeansClusteringResult(controller.getListRecordsArffForTeknis());
+        System.out.println(controller.outputKmeansClusteringResult(controller.getListRecordsArffForTeknis()));
         System.out.println("HASIL CLUSTERING KONTRAKTOR UNTUK KRITERIA ANGGARAN : ");
-        controller.outputKmeansClusteringResult(controller.getListRecordsArffForAnggaran());
+        System.out.println(controller.outputKmeansClusteringResult(controller.getListRecordsArffForAnggaran()));
     }
 }

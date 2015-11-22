@@ -9,7 +9,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import model.InputPairWiseComparison;
-import sample.state.staticVars;
 
 import java.io.IOException;
 

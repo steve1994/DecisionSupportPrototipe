@@ -1,4 +1,4 @@
-package sample.state;
+package sample;
 
 import AHP.Controller.ControllerAdministrasi;
 import AHP.Model.KriteriaGrafAdministrasi;

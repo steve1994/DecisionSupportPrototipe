@@ -64,64 +64,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="inputLabelTeknisController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/inputLabelTeknisController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1197" max-vertical-offset="1683">
-              <caret line="69" column="36" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inputLabelAnggaranController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/inputLabelAnggaranController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.4166667" vertical-offset="126" max-vertical-offset="1377">
-              <caret line="62" column="161" selection-start-line="62" selection-start-column="161" selection-end-line="62" selection-end-column="161" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="input_label_anggaran.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/input_label_anggaran.fxml">
+      <file leaf-file-name="layar_hasil_clustering.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/layar_hasil_clustering.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="10.866667" vertical-offset="700" max-vertical-offset="1105">
-              <caret line="22" column="94" selection-start-line="22" selection-start-column="94" selection-end-line="22" selection-end-column="94" />
+            <state vertical-scroll-proportion="-6.7" vertical-offset="241" max-vertical-offset="595">
+              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inputLabelAdministrasiController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/inputLabelAdministrasiController.java">
+      <file leaf-file-name="layarHasilClusteringController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sample/layarHasilClusteringController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1537" max-vertical-offset="2023">
-              <caret line="95" column="8" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="8" />
+            <state vertical-scroll-proportion="2.4348958" vertical-offset="0" max-vertical-offset="1088">
+              <caret line="55" column="50" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="input_label_teknis.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/input_label_teknis.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.666667" vertical-offset="955" max-vertical-offset="1377">
-              <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -129,18 +92,18 @@
       <file leaf-file-name="ControllerML.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ML/Controller/ControllerML.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7505" max-vertical-offset="8602">
-              <caret line="468" column="8" selection-start-line="468" selection-start-column="8" selection-end-line="468" selection-end-column="129" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="8320" max-vertical-offset="8704">
+              <caret line="523" column="110" selection-start-line="523" selection-start-column="110" selection-end-line="523" selection-end-column="110" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#18831#18850#0" expanded="true" />
+                <element signature="e#19073#19092#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="staticVars.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/state/staticVars.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/staticVars.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="113" max-vertical-offset="527">
               <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
@@ -159,8 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/model/Criteria.java" />
-        <option value="$PROJECT_DIR$/src/model/ListCriteria.java" />
         <option value="$PROJECT_DIR$/src/AHP/Controller.java" />
         <option value="$PROJECT_DIR$/src/AHP/ControllerAdministrasi.java" />
         <option value="$PROJECT_DIR$/src/AHP/ControllerAnggaran.java" />
@@ -200,7 +161,6 @@
         <option value="$PROJECT_DIR$/src/sample/layar_hasil_ahp.fxml" />
         <option value="$PROJECT_DIR$/src/sample/layarHasilAHPController.java" />
         <option value="$PROJECT_DIR$/src/ML/Model/oneRecordKriteria.java" />
-        <option value="$PROJECT_DIR$/src/ML/Controller/ControllerML.java" />
         <option value="$PROJECT_DIR$/src/sample/input_label_administrasi.fxml" />
         <option value="$PROJECT_DIR$/src/sample/state/staticVars.java" />
         <option value="$PROJECT_DIR$/src/sample/modelConfigurationController.java" />
@@ -210,6 +170,9 @@
         <option value="$PROJECT_DIR$/src/sample/inputLabelTeknisController.java" />
         <option value="$PROJECT_DIR$/src/sample/input_label_anggaran.fxml" />
         <option value="$PROJECT_DIR$/src/sample/inputLabelAnggaranController.java" />
+        <option value="$PROJECT_DIR$/src/sample/layar_hasil_clustering.fxml" />
+        <option value="$PROJECT_DIR$/src/ML/Controller/ControllerML.java" />
+        <option value="$PROJECT_DIR$/src/sample/layarHasilClusteringController.java" />
       </list>
     </option>
   </component>
@@ -307,28 +270,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Decision Support System Prototipe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Decision Support System Prototipe" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="state" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -536,7 +477,7 @@
       <recent name="ML.Controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.ControllerML">
     <configuration default="false" name="MatrixOperation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -904,12 +845,12 @@
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1447854677249" duration="1439000" />
-      <workItem from="1447913994902" duration="105073000" />
+      <workItem from="1447913994902" duration="106555000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107814000" />
+    <option name="totallyTimeSpent" value="109296000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1252,17 +1193,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/input_kontraktor.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.9333334" vertical-offset="0" max-vertical-offset="867">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/input_matriks_berpasangan.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -1291,20 +1221,9 @@
           <caret line="29" column="61" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#776#801#0" expanded="false" />
-            <element signature="e#2679#2704#0" expanded="false" />
-            <element signature="e#4464#4489#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/layarHasilAHPController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9114583" vertical-offset="2778" max-vertical-offset="3315">
-          <caret line="184" column="80" selection-start-line="184" selection-start-column="80" selection-end-line="184" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6677#6685#0" expanded="true" />
+            <element signature="e#744#769#0" expanded="false" />
+            <element signature="e#2647#2672#0" expanded="false" />
+            <element signature="e#4432#4457#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1346,18 +1265,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ML/Controller/ControllerML.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7505" max-vertical-offset="8602">
-          <caret line="468" column="8" selection-start-line="468" selection-start-column="8" selection-end-line="468" selection-end-column="129" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#18831#18850#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/state/staticVars.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/staticVars.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="113" max-vertical-offset="527">
           <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
@@ -1405,8 +1313,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/inputLabelAdministrasiController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1537" max-vertical-offset="2023">
-          <caret line="95" column="8" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1384" max-vertical-offset="1870">
+          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1426,8 +1334,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/inputLabelTeknisController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1197" max-vertical-offset="1683">
-          <caret line="69" column="36" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1180" max-vertical-offset="1666">
+          <caret line="68" column="36" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1436,8 +1344,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/inputLabelAnggaranController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.4166667" vertical-offset="126" max-vertical-offset="1377">
-          <caret line="62" column="161" selection-start-line="62" selection-start-column="161" selection-end-line="62" selection-end-column="161" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="976" max-vertical-offset="1360">
+          <caret line="61" column="161" selection-start-line="61" selection-start-column="161" selection-end-line="61" selection-end-column="161" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/input_kontraktor.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.9333334" vertical-offset="0" max-vertical-offset="867">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/layarHasilAHPController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="687" max-vertical-offset="3264">
+          <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6590#6598#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ML/Controller/ControllerML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8320" max-vertical-offset="8704">
+          <caret line="523" column="110" selection-start-line="523" selection-start-column="110" selection-end-line="523" selection-end-column="110" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#19073#19092#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/layar_hasil_clustering.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.7" vertical-offset="241" max-vertical-offset="595">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/layarHasilClusteringController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.4348958" vertical-offset="0" max-vertical-offset="1088">
+          <caret line="55" column="50" selection-start-line="55" selection-start-column="50" selection-end-line="55" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="354.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.layarHasilClusteringController">
+   <children>
+      <Button layoutX="241.0" layoutY="307.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="25.0" prefWidth="125.0" text="KEMBALI" />
+      <Label layoutX="47.0" layoutY="71.0" text="KRITERIA ADMINISTRASI" />
+      <Label layoutX="269.0" layoutY="71.0" text="KRITERIA TEKNIS" />
+      <Label layoutX="456.0" layoutY="71.0" text="KRITERIA ANGGARAN" />
+      <Label layoutX="112.0" layoutY="25.0" text="HASIL PENGELOMPOKAN JENIS KONTRAKTOR PER KRITERIA">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="hasilClusteringAdministrasi" layoutX="25.0" layoutY="92.0" prefHeight="200.0" prefWidth="181.0" />
+      <TextArea fx:id="hasilClusteringTeknis" layoutX="223.0" layoutY="92.0" prefHeight="200.0" prefWidth="181.0" />
+      <TextArea fx:id="hasilClusteringAnggaran" layoutX="424.0" layoutY="92.0" prefHeight="200.0" prefWidth="181.0" />
+   </children>
+</AnchorPane>
