@@ -28,10 +28,18 @@ public class layarSubkriteriaAHPController {
 
     public void handleNextButton(ActionEvent actionEvent) {
         Parent root = null;
-        try {
-            root = FXMLLoader.load(getClass().getResource("input_matriks_berpasangan.fxml"));
-        } catch (IOException e) {
-            e.printStackTrace();
+        if (staticVars.modelModeSelected == 1) {        // AHP
+            try {
+                root = FXMLLoader.load(getClass().getResource("input_matriks_berpasangan.fxml"));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else if (staticVars.modelModeSelected == 2) { // Clustering
+            try {
+                root = FXMLLoader.load(getClass().getResource("input_label_administrasi.fxml"));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));

@@ -17,12 +17,13 @@ public class modelConfigurationController {
     public void handleClusteringModel(ActionEvent actionEvent) {
         Parent root = null;
         try {
-            root = FXMLLoader.load(getClass().getResource("layar_clustering_form.fxml"));
+            root = FXMLLoader.load(getClass().getResource("layar_subkriteria_ahp.fxml"));
         } catch (IOException e) {
             e.printStackTrace();
         }
         Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
+        staticVars.modelModeSelected = 2;
         staticVars.currentStage = stage;
     }
 
@@ -35,6 +36,7 @@ public class modelConfigurationController {
         }
         Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
+        staticVars.modelModeSelected = 1;
         staticVars.currentStage = stage;
     }
 }
