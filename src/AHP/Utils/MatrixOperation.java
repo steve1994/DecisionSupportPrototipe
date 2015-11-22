@@ -336,7 +336,7 @@ public class MatrixOperation {
                 evaluasiAnggaran.insertSubcriteriaValueContractor(i,anggaran.getContractorAdministrasiEigenVector().get(j));
             }
         }
-        Double[] finalPrioritizedAnggaran = evaluasiAnggaran.computeEigenValueEachContractor();
+        double[] finalPrioritizedAnggaran = evaluasiAnggaran.computeEigenValueEachContractor();
         for (int i=0; i<finalPrioritizedAnggaran.length; i++) {
             System.out.println("Kriteria Anggaran Kontraktor-" + (i+1) + " : " + finalPrioritizedAnggaran[i]);
         }

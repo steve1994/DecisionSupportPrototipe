@@ -144,39 +144,45 @@ public class layarHasilAHPController implements Initializable{
         for (int i=0;i<6;i++) {
             double scoreThisContractor = finalPrioritizedAdministrasi[i];
             String nameThisContractor = daftarNamaKontraktor.get(i);
+            StringBuffer nameScoreContractor = new StringBuffer();
+            nameScoreContractor.append(nameThisContractor).append(" (").append(scoreThisContractor).append(")");
             switch (i) {
-                case 0 : ranking1Administrasi.setText(nameThisContractor + " (" + scoreThisContractor + ")"); break;
-                case 1 : ranking2Administrasi.setText(nameThisContractor + " (" + scoreThisContractor + ")"); break;
-                case 2 : ranking3Administrasi.setText(nameThisContractor + " (" + scoreThisContractor + ")"); break;
-                case 3 : ranking4Administrasi.setText(nameThisContractor + " (" + scoreThisContractor + ")"); break;
-                case 4 : ranking5Administrasi.setText(nameThisContractor + " (" + scoreThisContractor + ")"); break;
-                case 5 : ranking6Administrasi.setText(nameThisContractor + " (" + scoreThisContractor + ")"); break;
+                case 0 : ranking1Administrasi.setText(nameScoreContractor.toString()); break;
+                case 1 : ranking2Administrasi.setText(nameScoreContractor.toString()); break;
+                case 2 : ranking3Administrasi.setText(nameScoreContractor.toString()); break;
+                case 3 : ranking4Administrasi.setText(nameScoreContractor.toString()); break;
+                case 4 : ranking5Administrasi.setText(nameScoreContractor.toString()); break;
+                case 5 : ranking6Administrasi.setText(nameScoreContractor.toString()); break;
             }
         }
         // TEKNIS
         for (int i=0;i<6;i++) {
             double scoreThisContractor = finalPrioritizedTeknis[i];
             String nameThisContractor = daftarNamaKontraktor.get(i);
+            StringBuffer nameScoreContractor = new StringBuffer();
+            nameScoreContractor.append(nameThisContractor).append(" (").append(scoreThisContractor).append(")");
             switch (i) {
-                case 0 : ranking1Teknis.setText(nameThisContractor + " (" + scoreThisContractor + ")"); break;
-                case 1 : ranking2Teknis.setText(nameThisContractor + " (" + scoreThisContractor + ")"); break;
-                case 2 : ranking3Teknis.setText(nameThisContractor + " (" + scoreThisContractor + ")"); break;
-                case 3 : ranking4Teknis.setText(nameThisContractor + " (" + scoreThisContractor + ")"); break;
-                case 4 : ranking5Teknis.setText(nameThisContractor + " (" + scoreThisContractor + ")"); break;
-                case 5 : ranking6Teknis.setText(nameThisContractor + " (" + scoreThisContractor + ")"); break;
+                case 0 : ranking1Teknis.setText(nameScoreContractor.toString()); break;
+                case 1 : ranking2Teknis.setText(nameScoreContractor.toString()); break;
+                case 2 : ranking3Teknis.setText(nameScoreContractor.toString()); break;
+                case 3 : ranking4Teknis.setText(nameScoreContractor.toString()); break;
+                case 4 : ranking5Teknis.setText(nameScoreContractor.toString()); break;
+                case 5 : ranking6Teknis.setText(nameScoreContractor.toString()); break;
             }
         }
         // ANGGARAN
         for (int i=0;i<6;i++) {
             double scoreThisContractor = finalPrioritizedAnggaran[i];
             String nameThisContractor = daftarNamaKontraktor.get(i);
+            StringBuffer nameScoreContractor = new StringBuffer();
+            nameScoreContractor.append(nameThisContractor).append(" (").append(scoreThisContractor).append(")");
             switch (i) {
-                case 0 : ranking1Anggaran.setText(nameThisContractor + " (" + scoreThisContractor + ")"); break;
-                case 1 : ranking2Anggaran.setText(nameThisContractor + " (" + scoreThisContractor + ")"); break;
-                case 2 : ranking3Anggaran.setText(nameThisContractor + " (" + scoreThisContractor + ")"); break;
-                case 3 : ranking4Anggaran.setText(nameThisContractor + " (" + scoreThisContractor + ")"); break;
-                case 4 : ranking5Anggaran.setText(nameThisContractor + " (" + scoreThisContractor + ")"); break;
-                case 5 : ranking6Anggaran.setText(nameThisContractor + " (" + scoreThisContractor + ")"); break;
+                case 0 : ranking1Anggaran.setText(nameScoreContractor.toString()); break;
+                case 1 : ranking2Anggaran.setText(nameScoreContractor.toString()); break;
+                case 2 : ranking3Anggaran.setText(nameScoreContractor.toString()); break;
+                case 3 : ranking4Anggaran.setText(nameScoreContractor.toString()); break;
+                case 4 : ranking5Anggaran.setText(nameScoreContractor.toString()); break;
+                case 5 : ranking6Anggaran.setText(nameScoreContractor.toString()); break;
             }
         }
     }
