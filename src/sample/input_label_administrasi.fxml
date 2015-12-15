@@ -9,81 +9,40 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="592.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.inputLabelAdministrasiController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="299.0" prefWidth="592.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.inputLabelAdministrasiController">
    <children>
-      <Label layoutX="13.0" layoutY="131.0" text="KONTRAKTOR 1" />
-      <Label layoutX="13.0" layoutY="172.0" text="KONTRAKTOR 2" />
-      <Label layoutX="13.0" layoutY="207.0" text="KONTRAKTOR 3" />
-      <Label layoutX="13.0" layoutY="323.0" text="KONTRAKTOR 6" />
-      <Label layoutX="13.0" layoutY="290.0" text="KONTRAKTOR 5" />
-      <Label layoutX="13.0" layoutY="248.0" text="KONTRAKTOR 4" />
-      <Label layoutX="116.0" layoutY="101.0" text="SCR1" />
-      <Label layoutX="174.0" layoutY="101.0" text="SCR2" />
-      <Label layoutX="230.0" layoutY="101.0" text="SCR3" />
-      <Label layoutX="286.0" layoutY="101.0" text="SCR4" />
-      <Label layoutX="343.0" layoutY="101.0" text="SCR5" />
-      <Label layoutX="401.0" layoutY="101.0" text="SCR6" />
-      <Label layoutX="461.0" layoutY="101.0" text="SCR7" />
-      <Label layoutX="523.0" layoutY="101.0" text="SCR8" />
-      <TextField fx:id="administrasi11" layoutX="114.0" layoutY="127.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi12" layoutX="173.0" layoutY="127.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi13" layoutX="230.0" layoutY="127.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi14" layoutX="285.0" layoutY="127.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi15" layoutX="342.0" layoutY="127.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi16" layoutX="401.0" layoutY="127.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi17" layoutX="461.0" layoutY="127.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi18" layoutX="521.0" layoutY="127.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi23" layoutX="231.0" layoutY="167.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi22" layoutX="174.0" layoutY="167.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi21" layoutX="115.0" layoutY="167.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi33" layoutX="231.0" layoutY="203.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi32" layoutX="174.0" layoutY="203.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi31" layoutX="115.0" layoutY="203.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi43" layoutX="232.0" layoutY="244.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi42" layoutX="175.0" layoutY="244.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi41" layoutX="116.0" layoutY="244.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi53" layoutX="231.0" layoutY="284.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi52" layoutX="174.0" layoutY="284.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi51" layoutX="115.0" layoutY="284.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi63" layoutX="231.0" layoutY="320.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi62" layoutX="174.0" layoutY="320.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi61" layoutX="115.0" layoutY="320.0" prefHeight="25.0" prefWidth="47.0" />
-      <Button layoutX="116.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="25.0" prefWidth="118.0" text="KEMBALI" />
-      <Button layoutX="356.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleNextButton" prefHeight="25.0" prefWidth="118.0" text="LANJUTKAN" />
-      <TextField fx:id="administrasi28" layoutX="522.0" layoutY="167.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi27" layoutX="462.0" layoutY="167.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi26" layoutX="402.0" layoutY="167.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi25" layoutX="343.0" layoutY="167.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi24" layoutX="286.0" layoutY="167.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi38" layoutX="522.0" layoutY="204.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi37" layoutX="462.0" layoutY="204.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi36" layoutX="402.0" layoutY="204.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi35" layoutX="343.0" layoutY="204.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi34" layoutX="286.0" layoutY="204.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi48" layoutX="524.0" layoutY="244.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi47" layoutX="464.0" layoutY="244.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi46" layoutX="404.0" layoutY="244.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi45" layoutX="345.0" layoutY="244.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi44" layoutX="288.0" layoutY="244.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi58" layoutX="524.0" layoutY="284.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi57" layoutX="464.0" layoutY="284.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi56" layoutX="404.0" layoutY="284.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi55" layoutX="345.0" layoutY="284.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi54" layoutX="288.0" layoutY="284.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi68" layoutX="524.0" layoutY="319.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi67" layoutX="464.0" layoutY="319.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi66" layoutX="404.0" layoutY="319.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi65" layoutX="345.0" layoutY="319.0" prefHeight="25.0" prefWidth="47.0" />
-      <TextField fx:id="administrasi64" layoutX="288.0" layoutY="319.0" prefHeight="25.0" prefWidth="47.0" />
+      <Button layoutX="116.0" layoutY="238.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="25.0" prefWidth="118.0" text="KEMBALI" />
+      <Button layoutX="349.0" layoutY="238.0" mnemonicParsing="false" onAction="#handleNextButton" prefHeight="25.0" prefWidth="118.0" text="LANJUTKAN" />
       <Label layoutX="71.0" layoutY="24.0" text="PELABELAN KONTRAKTOR UNTUK KRITERIA ADMINISTRASI">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="100.0" layoutY="68.0" text="Keterangan : isi label dengan angka 1/2 untuk setiap subkriteria">
+      <Label layoutX="95.0" layoutY="66.0" text="Keterangan : baca petunjuk pengisian file pada halaman sebelumnya">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
+      <TextField fx:id="pathPenilaianAdministrasi" layoutX="177.0" layoutY="112.0" prefHeight="25.0" prefWidth="324.0" promptText="path file penilaian administrasi" />
+      <Button fx:id="searchPenilaianAdministrasi" layoutX="515.0" layoutY="112.0" mnemonicParsing="false" onAction="#handleSearchAdministrasi" text="Search" />
+      <Label layoutX="27.0" layoutY="116.0" text="Penilaian Administrasi">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="154.0" text="Penilaian Teknis">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="searchPenilaianTeknis" layoutX="513.0" layoutY="151.0" mnemonicParsing="false" onAction="#handleSearchTeknis" text="Search" />
+      <TextField fx:id="pathPenilaianTeknis" layoutX="175.0" layoutY="151.0" prefHeight="25.0" prefWidth="324.0" promptText="path file penilaian teknis" />
+      <Label layoutX="25.0" layoutY="192.0" text="Penilaian Anggaran">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="searchPenilaianAnggaran" layoutX="513.0" layoutY="188.0" mnemonicParsing="false" onAction="#handleSearchAnggaran" text="Search" />
+      <TextField fx:id="pathPenilaianAnggaran" layoutX="175.0" layoutY="188.0" prefHeight="25.0" prefWidth="324.0" promptText="path file penilaian anggaran" />
    </children>
 </AnchorPane>

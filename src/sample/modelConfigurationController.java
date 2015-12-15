@@ -16,7 +16,7 @@ public class modelConfigurationController {
     public void handleClusteringModel(ActionEvent actionEvent) {
         Parent root = null;
         try {
-            root = FXMLLoader.load(getClass().getResource("layar_subkriteria_ahp.fxml"));
+            root = FXMLLoader.load(getClass().getResource("layar_keterangan_label_clustering.fxml"));
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -27,7 +27,7 @@ public class layarSubkriteriaAHPController {
 
     public void handleNextButton(ActionEvent actionEvent) {
         Parent root = null;
-        if (staticVars.modelModeSelected == 1) {        // AHP
+       /* if (staticVars.modelModeSelected == 1) {        // AHP
             try {
                 root = FXMLLoader.load(getClass().getResource("input_matriks_berpasangan.fxml"));
             } catch (IOException e) {
@@ -39,6 +39,11 @@ public class layarSubkriteriaAHPController {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        } */
+        try {
+            root = FXMLLoader.load(getClass().getResource("input_matriks_berpasangan.fxml"));
+        } catch (IOException e) {
+            e.printStackTrace();
         }
         Stage stage = (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));

@@ -9,321 +9,35 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="613.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.inputMatriksBerpasanganController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="613.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.inputMatriksBerpasanganController">
    <children>
-      <Button layoutX="105.0" layoutY="411.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="25.0" prefWidth="124.0" text="KEMBALI" />
-      <Button layoutX="389.0" layoutY="411.0" mnemonicParsing="false" onAction="#handleNextButton" prefHeight="25.0" prefWidth="124.0" text="LANJUT" />
-      <TextField fx:id="Administrasi12" layoutX="50.0" layoutY="91.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi13" layoutX="89.0" layoutY="91.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi14" layoutX="127.0" layoutY="91.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi15" layoutX="166.0" layoutY="91.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi16" layoutX="207.0" layoutY="91.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi17" layoutX="246.0" layoutY="91.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi18" layoutX="285.0" layoutY="91.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi28" layoutX="286.0" layoutY="126.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi27" layoutX="247.0" layoutY="126.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi26" layoutX="208.0" layoutY="126.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi25" layoutX="167.0" layoutY="126.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi24" layoutX="128.0" layoutY="126.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi23" layoutX="90.0" layoutY="126.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi38" layoutX="286.0" layoutY="161.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi37" layoutX="247.0" layoutY="161.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi36" layoutX="208.0" layoutY="161.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi35" layoutX="167.0" layoutY="161.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi34" layoutX="128.0" layoutY="161.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi48" layoutX="286.0" layoutY="199.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi47" layoutX="247.0" layoutY="199.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi46" layoutX="208.0" layoutY="199.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi45" layoutX="167.0" layoutY="199.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi58" layoutX="286.0" layoutY="236.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi57" layoutX="247.0" layoutY="236.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi56" layoutX="208.0" layoutY="236.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi68" layoutX="285.0" layoutY="273.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi67" layoutX="246.0" layoutY="273.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Administrasi78" layoutX="285.0" layoutY="309.0" prefHeight="25.0" prefWidth="27.0" />
-      <Label layoutX="30.0" layoutY="92.0" text="1">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="60.0" layoutY="129.0" text="1">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="99.0" layoutY="164.0" text="1">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="138.0" layoutY="202.0" text="1">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="177.0" layoutY="239.0" text="1">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="218.0" layoutY="276.0" text="1">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="256.0" layoutY="312.0" text="1">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="296.0" layoutY="347.0" text="1">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="24.0" layoutY="22.0" prefHeight="21.0" prefWidth="285.0" text="MATRIKS SEGITIGA ATAS BERPASANGAN">
+      <Button layoutX="105.0" layoutY="221.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="25.0" prefWidth="124.0" text="KEMBALI" />
+      <Button layoutX="379.0" layoutY="221.0" mnemonicParsing="false" onAction="#handleNextButton" prefHeight="25.0" prefWidth="124.0" text="LANJUT" />
+      <Label layoutX="164.0" layoutY="22.0" prefHeight="21.0" prefWidth="285.0" text="INPUT FILE MATRIKS BERPASANGAN">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Label layoutX="56.0" layoutY="62.0" text="K2">
+      <TextField fx:id="pathMatrixAdministrasi" layoutX="184.0" layoutY="71.0" prefHeight="25.0" prefWidth="312.0" promptText="path file matrix administrasi" />
+      <TextField fx:id="pathMatrixTeknis" layoutX="184.0" layoutY="120.0" prefHeight="25.0" prefWidth="312.0" promptText="path file matrix teknis" />
+      <TextField fx:id="pathMatrixAnggaran" layoutX="184.0" layoutY="171.0" prefHeight="25.0" prefWidth="312.0" promptText="path file matrix anggaran" />
+      <Button fx:id="searchMatrixAdministrasi" layoutX="503.0" layoutY="71.0" mnemonicParsing="false" onAction="#handleChooseMatrixAdministrasi" text="Search" />
+      <Button fx:id="searchMatrixTeknis" layoutX="503.0" layoutY="120.0" mnemonicParsing="false" onAction="#handleChooseMatrixTeknis" text="Search" />
+      <Button fx:id="searchMatrixAnggaran" layoutX="503.0" layoutY="171.0" mnemonicParsing="false" onAction="#handleChooseMatrixAnggaran" text="Search" />
+      <Label layoutX="40.0" layoutY="74.0" text="Matrix Adminisrasi">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="95.0" layoutY="62.0" text="K3">
+      <Label layoutX="40.0" layoutY="123.0" text="Matrix Teknis">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="27.0" layoutY="62.0" text="K1">
+      <Label layoutX="40.0" layoutY="174.0" text="Matrix Anggaran">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="133.0" layoutY="62.0" text="K4">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="173.0" layoutY="62.0" text="K5">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="214.0" layoutY="62.0" text="K6">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="252.0" layoutY="62.0" text="K7">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="292.0" layoutY="62.0" text="K8">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="6.0" layoutY="92.0" text="K1">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="6.0" layoutY="129.0" text="K2">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="6.0" layoutY="164.0" text="K3">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="6.0" layoutY="202.0" text="K4">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="6.0" layoutY="239.0" text="K5">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="6.0" layoutY="276.0" text="K6">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="6.0" layoutY="312.0" text="K7">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="6.0" layoutY="347.0" text="K8">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="350.0" layoutY="236.0" text="K6">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="350.0" layoutY="199.0" text="K5">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="350.0" layoutY="162.0" text="K4">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="350.0" layoutY="124.0" text="K3">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="350.0" layoutY="89.0" text="K2">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="350.0" layoutY="52.0" text="K1">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="558.0" layoutY="22.0" text="K6">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="517.0" layoutY="22.0" text="K5">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="477.0" layoutY="22.0" text="K4">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="371.0" layoutY="22.0" text="K1">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="439.0" layoutY="22.0" text="K3">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="400.0" layoutY="22.0" text="K2">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="563.0" layoutY="236.0" text="1">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="522.0" layoutY="199.0" text="1">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="483.0" layoutY="162.0" text="1">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="444.0" layoutY="124.0" text="1">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="405.0" layoutY="89.0" text="1">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="375.0" layoutY="52.0" text="1">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <TextField fx:id="Teknis56" layoutX="553.0" layoutY="196.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Teknis45" layoutX="512.0" layoutY="159.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Teknis46" layoutX="553.0" layoutY="159.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Teknis34" layoutX="473.0" layoutY="121.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Teknis35" layoutX="512.0" layoutY="121.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Teknis36" layoutX="553.0" layoutY="121.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Teknis23" layoutX="435.0" layoutY="86.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Teknis24" layoutX="473.0" layoutY="86.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Teknis25" layoutX="512.0" layoutY="86.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Teknis26" layoutX="553.0" layoutY="86.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Teknis16" layoutX="552.0" layoutY="51.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Teknis15" layoutX="511.0" layoutY="51.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Teknis14" layoutX="472.0" layoutY="51.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Teknis13" layoutX="434.0" layoutY="51.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Teknis12" layoutX="395.0" layoutY="51.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Anggaran12" layoutX="397.0" layoutY="302.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Anggaran13" layoutX="436.0" layoutY="302.0" prefHeight="25.0" prefWidth="27.0" />
-      <TextField fx:id="Anggaran23" layoutX="437.0" layoutY="337.0" prefHeight="25.0" prefWidth="27.0" />
-      <Label layoutX="377.0" layoutY="303.0" text="1">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="407.0" layoutY="340.0" text="1">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="446.0" layoutY="375.0" text="1">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="402.0" layoutY="273.0" text="K2">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="441.0" layoutY="273.0" text="K3">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="373.0" layoutY="273.0" text="K1">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="352.0" layoutY="303.0" text="K1">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="352.0" layoutY="340.0" text="K2">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="352.0" layoutY="375.0" text="K3">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <TextField fx:id="pathMatrixAdministrasi" layoutX="53.0" layoutY="466.0" prefHeight="25.0" prefWidth="312.0" />
-      <TextField fx:id="pathMatrixTeknis" layoutX="52.0" layoutY="506.0" prefHeight="25.0" prefWidth="312.0" />
-      <TextField fx:id="pathMatrixAnggaran" layoutX="51.0" layoutY="547.0" prefHeight="25.0" prefWidth="312.0" />
-      <Button fx:id="searchMatrixAdministrasi" layoutX="369.0" layoutY="466.0" mnemonicParsing="false" text="Search" onAction="#handleChooseMatrixAdministrasi" />
-      <Button fx:id="searchMatrixTeknis" layoutX="369.0" layoutY="506.0" mnemonicParsing="false" text="Search" onAction="#handleChooseMatrixTeknis" />
-      <Button fx:id="searchMatrixAnggaran" layoutX="369.0" layoutY="547.0" mnemonicParsing="false" text="Search" onAction="#handleChooseMatrixAnggaran" />
    </children>
 </AnchorPane>
