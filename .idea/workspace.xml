@@ -149,7 +149,7 @@
       <file leaf-file-name="modelConfigurationController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/modelConfigurationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8295739" vertical-offset="128" max-vertical-offset="680">
+            <state vertical-scroll-proportion="1.0225564" vertical-offset="51" max-vertical-offset="680">
               <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
               <folding />
             </state>
@@ -959,12 +959,12 @@
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1447854677249" duration="1439000" />
       <workItem from="1447913994902" duration="112990000" />
-      <workItem from="1450171982386" duration="18276000" />
+      <workItem from="1450171982386" duration="19953000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134007000" />
+    <option name="totallyTimeSpent" value="135684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1482,7 +1482,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/modelConfigurationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8295739" vertical-offset="128" max-vertical-offset="680">
+        <state vertical-scroll-proportion="1.0225564" vertical-offset="51" max-vertical-offset="680">
           <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
           <folding />
         </state>
