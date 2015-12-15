@@ -9,10 +9,10 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="457.0" prefWidth="613.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.inputMatriksBerpasanganController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="613.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.inputMatriksBerpasanganController">
    <children>
-      <Button onAction="#handleBackButton" layoutX="105.0" layoutY="411.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="124.0" text="KEMBALI" />
-      <Button onAction="#handleNextButton" layoutX="389.0" layoutY="411.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="124.0" text="LANJUT" />
+      <Button layoutX="105.0" layoutY="411.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="25.0" prefWidth="124.0" text="KEMBALI" />
+      <Button layoutX="389.0" layoutY="411.0" mnemonicParsing="false" onAction="#handleNextButton" prefHeight="25.0" prefWidth="124.0" text="LANJUT" />
       <TextField fx:id="Administrasi12" layoutX="50.0" layoutY="91.0" prefHeight="25.0" prefWidth="27.0" />
       <TextField fx:id="Administrasi13" layoutX="89.0" layoutY="91.0" prefHeight="25.0" prefWidth="27.0" />
       <TextField fx:id="Administrasi14" layoutX="127.0" layoutY="91.0" prefHeight="25.0" prefWidth="27.0" />
@@ -319,5 +319,11 @@
             <Font size="14.0" />
          </font>
       </Label>
+      <TextField fx:id="pathMatrixAdministrasi" layoutX="53.0" layoutY="466.0" prefHeight="25.0" prefWidth="312.0" />
+      <TextField fx:id="pathMatrixTeknis" layoutX="52.0" layoutY="506.0" prefHeight="25.0" prefWidth="312.0" />
+      <TextField fx:id="pathMatrixAnggaran" layoutX="51.0" layoutY="547.0" prefHeight="25.0" prefWidth="312.0" />
+      <Button fx:id="searchMatrixAdministrasi" layoutX="369.0" layoutY="466.0" mnemonicParsing="false" text="Search" onAction="#handleChooseMatrixAdministrasi" />
+      <Button fx:id="searchMatrixTeknis" layoutX="369.0" layoutY="506.0" mnemonicParsing="false" text="Search" onAction="#handleChooseMatrixTeknis" />
+      <Button fx:id="searchMatrixAnggaran" layoutX="369.0" layoutY="547.0" mnemonicParsing="false" text="Search" onAction="#handleChooseMatrixAnggaran" />
    </children>
 </AnchorPane>

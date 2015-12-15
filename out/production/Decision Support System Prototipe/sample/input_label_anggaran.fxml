@@ -18,7 +18,7 @@
       <Label layoutX="115.0" layoutY="108.0" text="SCR1" />
       <Label layoutX="260.0" layoutY="108.0" text="SCR2" />
       <Label layoutX="409.0" layoutY="108.0" text="SCR3" />
-      <TextField id="anggaran11" layoutX="114.0" layoutY="136.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="anggaran11" layoutX="114.0" layoutY="136.0" prefHeight="25.0" prefWidth="130.0" />
       <Button layoutX="113.0" layoutY="394.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="25.0" prefWidth="118.0" text="KEMBALI" />
       <Button layoutX="356.0" layoutY="394.0" mnemonicParsing="false" onAction="#handleLihatHasilButton" prefHeight="25.0" prefWidth="118.0" text="LIHAT HASIL" />
       <Label layoutX="65.0" layoutY="20.0" text="PELABELAN KONTRAKTOR UNTUK KRITERIA ANGGARAN">
@@ -38,22 +38,22 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField id="anggaran12" layoutX="260.0" layoutY="136.0" prefHeight="25.0" prefWidth="130.0" />
-      <TextField id="anggaran13" layoutX="409.0" layoutY="136.0" prefHeight="25.0" prefWidth="130.0" />
-      <TextField id="anggaran23" layoutX="408.0" layoutY="177.0" prefHeight="25.0" prefWidth="130.0" />
-      <TextField id="anggaran22" layoutX="259.0" layoutY="177.0" prefHeight="25.0" prefWidth="130.0" />
-      <TextField id="anggaran21" layoutX="113.0" layoutY="177.0" prefHeight="25.0" prefWidth="130.0" />
-      <TextField id="anggaran33" layoutX="408.0" layoutY="217.0" prefHeight="25.0" prefWidth="130.0" />
-      <TextField id="anggaran32" layoutX="259.0" layoutY="217.0" prefHeight="25.0" prefWidth="130.0" />
-      <TextField id="anggaran31" layoutX="113.0" layoutY="217.0" prefHeight="25.0" prefWidth="130.0" />
-      <TextField id="anggaran43" layoutX="408.0" layoutY="257.0" prefHeight="25.0" prefWidth="130.0" />
-      <TextField id="anggaran42" layoutX="259.0" layoutY="257.0" prefHeight="25.0" prefWidth="130.0" />
-      <TextField id="anggaran41" layoutX="113.0" layoutY="257.0" prefHeight="25.0" prefWidth="130.0" />
-      <TextField id="anggaran53" layoutX="408.0" layoutY="298.0" prefHeight="25.0" prefWidth="130.0" />
-      <TextField id="anggaran52" layoutX="259.0" layoutY="298.0" prefHeight="25.0" prefWidth="130.0" />
-      <TextField id="anggaran51" layoutX="113.0" layoutY="298.0" prefHeight="25.0" prefWidth="130.0" />
-      <TextField id="anggaran63" layoutX="408.0" layoutY="336.0" prefHeight="25.0" prefWidth="130.0" />
-      <TextField id="anggaran62" layoutX="259.0" layoutY="336.0" prefHeight="25.0" prefWidth="130.0" />
-      <TextField id="anggaran61" layoutX="113.0" layoutY="336.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="anggaran12" layoutX="260.0" layoutY="136.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="anggaran13" layoutX="409.0" layoutY="136.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="anggaran23" layoutX="408.0" layoutY="177.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="anggaran22" layoutX="259.0" layoutY="177.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="anggaran21" layoutX="113.0" layoutY="177.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="anggaran33" layoutX="408.0" layoutY="217.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="anggaran32" layoutX="259.0" layoutY="217.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="anggaran31" layoutX="113.0" layoutY="217.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="anggaran43" layoutX="408.0" layoutY="257.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="anggaran42" layoutX="259.0" layoutY="257.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="anggaran41" layoutX="113.0" layoutY="257.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="anggaran53" layoutX="408.0" layoutY="298.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="anggaran52" layoutX="259.0" layoutY="298.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="anggaran51" layoutX="113.0" layoutY="298.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="anggaran63" layoutX="408.0" layoutY="336.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="anggaran62" layoutX="259.0" layoutY="336.0" prefHeight="25.0" prefWidth="130.0" />
+      <TextField fx:id="anggaran61" layoutX="113.0" layoutY="336.0" prefHeight="25.0" prefWidth="130.0" />
    </children>
 </AnchorPane>

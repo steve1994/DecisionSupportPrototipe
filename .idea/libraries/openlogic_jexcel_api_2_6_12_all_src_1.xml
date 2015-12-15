@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="openlogic-jexcel-api-2.6.12-all-src-1">
+    <CLASSES>
+      <root url="jar://D:/openlogic-jexcel-api-2.6.12-all-src-1.zip!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/openlogic-jexcel-api-2.6.12-all-src-1.zip!/jexcel-api-2.6.12-src/docs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/openlogic-jexcel-api-2.6.12-all-src-1.zip!/jexcel-api-2.6.12-src/build" />
+      <root url="jar://D:/openlogic-jexcel-api-2.6.12-all-src-1.zip!/jexcel-api-2.6.12-src/src" />
+    </SOURCES>
+  </library>
+</component>

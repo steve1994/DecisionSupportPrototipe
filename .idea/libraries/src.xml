@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="src">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/jexcel-1.7-windows-32_64-bit.zip!/demo/src" />
+      <root url="jar://D:/jexcel-1.7-windows-32_64-bit.zip!/samples/src" />
+    </SOURCES>
+  </library>
+</component>
